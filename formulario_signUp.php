@@ -5,7 +5,8 @@
 	$usuario=$_POST['usuario'];
 	$email=$_POST['email'];
 	$password=$_POST['password'];
-	$confirmPassword=$_POST['confirmPassword'];
+	// $confirmPassword=$_POST['confirmPassword'];
+	$confirmPassword=$_POST['confirm_password'];
 
 	$resultado = mysqli_query($conexion, "INSERT INTO usuarios VALUES (NULL, '$usuario', '$email', '$password')");
 
