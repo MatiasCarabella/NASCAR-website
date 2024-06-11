@@ -1,10 +1,13 @@
-<?php $estaPagina='SignUp'; ?>
-<?php $mensaje = '<p>¿Ya tienes una cuenta? <a href="logIn.php">Inicia Sesión</a></p>'; ?>
+<?php
+include ('inc/nav.php');
+$estaPagina = 'SignUp';
+$mensaje = '<p>¿Ya tienes una cuenta? <a href="logIn.php">Inicia Sesión</a></p>';
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Log In | NASCAR</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/base.php">
@@ -12,7 +15,7 @@
 </head>
 <body class="sitio">
 
-	<?php include('inc/nav.php') ?>
+	
 	<?php no_admite_logeados(); ?>
 	
 	<main class="holder registro">
@@ -43,14 +46,17 @@
 							<input type="submit" value="Registrarse" name="Registrarse" id="submit">
 						</div>
 						<?php
-							if (isset($_GET['envio']) && $_GET['envio']=='ok'){ $mensaje = '<p class="textoResultado">Registro completado con éxito. <a href="logIn.php">Inicia Sesión</a></p>';}
-							else if(isset($_GET['envio']) && $_GET['envio']=='error'){ $mensaje = '<p class="textoResultado">No pudimos procesar tu solicitud</p>';} ?>
+if (isset($_GET['envio']) && $_GET['envio'] == 'ok') {
+    $mensaje = '<p class="textoResultado">Registro completado con éxito. <a href="logIn.php">Inicia Sesión</a></p>';
+} else if (isset($_GET['envio']) && $_GET['envio'] == 'error') {
+    $mensaje = '<p class="textoResultado">No pudimos procesar tu solicitud</p>';
+} ?>
 					   <?php echo $mensaje; ?>
 				</form>
 		</div>
 	</main>
 
-	<?php include('inc/footer.php') ?>
+	<?php include ('inc/footer.php') ?>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/opacity.js"></script>

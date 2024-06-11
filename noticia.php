@@ -1,9 +1,12 @@
-<?php $estaPagina='Noticia'; ?>
+<?php 
+	include('inc/nav.php');
+	$estaPagina='Noticia';
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Noticia | NASCAR</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/base.php">
@@ -11,7 +14,6 @@
 </head>
 <body class="sitio">
 
-	<?php include('inc/nav.php') ?>
 	<?php 
 	if(isset($_GET['id_noticia'])){ 
 		$id_noticia =$_GET['id_noticia'];

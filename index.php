@@ -1,18 +1,18 @@
-<?php $estaPagina='Home';?>
+<?php 
+	include('inc/nav.php');
+	$estaPagina='Home';
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>NASCAR</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/base.php">
 	<link rel="icon" href="img/favicon.ico">
 </head>
-<body class="sitio">
-
-	<?php include('inc/nav.php') ?>
-	
+<body class="sitio">	
 	<main class="holder degradeHome">
 		<div class="homeWallpaper">
 			<img src="img/home/homeWallpaper7.jpg" class="center">
@@ -85,8 +85,9 @@
 		</div>	
 	</main>
 
-	<?php include('inc/footer.php') ?>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/video-hover.js"></script> 
 </body>
 </html>
+
+<?php include('inc/footer.php') ?>

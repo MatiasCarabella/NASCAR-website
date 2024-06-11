@@ -1,10 +1,13 @@
-<?php $estaPagina='LogIn'; ?>
+<?php
+include ('inc/nav.php');
+$estaPagina = 'LogIn';
+?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Log In | NASCAR</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/base.php">
@@ -12,7 +15,7 @@
 </head>
 <body class="sitio">
 
-	<?php include('inc/nav.php') ?>
+
 	<?php no_admite_logeados(); ?>
 	
 	<main class="holder login">
@@ -35,15 +38,16 @@
 						</div>
 						<p>¿No tienes una cuenta? <a href="signUp.php">Regístrate</a></p>
 						<?php
-							if (isset($_GET['logeo']) && $_GET['logeo']=='error'){ 
-						?>
+if (isset($_GET['logeo']) && $_GET['logeo'] == 'error') {
+?>
 						<p class="textoLogeo" style="position: absolute;">Usuario y/o contraseña incorrectos.</p>
-						<?php  }  ?>
+						<?php
+} ?>
 				</form>
 		</div>
 	</main>
 
-	<?php include('inc/footer.php') ?>
+	<?php include ('inc/footer.php') ?>
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/opacity.js"></script>

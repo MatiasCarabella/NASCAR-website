@@ -1,9 +1,12 @@
-<?php $estaPagina='Posiciones'; ?>
+<?php 
+	include('inc/nav.php');
+	$estaPagina='Posiciones';
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Posiciones | NASCAR</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/base.php">
@@ -12,9 +15,6 @@
 	<script src="js/jquery.tablesorter.min.js"></script>
 </head>
 <body class="sitio">
-
-	<?php include('inc/nav.php') ?>
-
 	<main class="holder degradePosiciones">
 		<div class="tablaDePosiciones">
 			<h1>Posiciones ─ Temporada 2019</h1>
