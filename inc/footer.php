@@ -7,8 +7,8 @@
 				<div class="columna partners">
 				<h4>SOCIOS</h4>
 				<div class="sponsors">
-					<a href="https://www.monsterenergy.com/ar/en/sports/nascar" target="_blank"><img src="img/monsterLogo.png" class="logo"></a>
-					<a href="https://www.goodyear.com/en-US/company/nascar/tires" target="_blank"><img src="img/goodyearLogo.png" class="logo"></a>
+					<a href="https://www.monsterenergy.com/en-us/" target="_blank"><img src="img/monsterLogo.png" class="logo"></a>
+					<a href="https://www.goodyear.com/" target="_blank"><img src="img/goodyearLogo.png" class="logo"></a>
 				</div>
 				<h4 style="margin-top: 0;">FABRICANTES</h4>
 				<div class="fabricantes">
@@ -28,8 +28,8 @@
 			<div class="columna redes">
 				<h4>REDES</h4>
 				<p><a href="https://www.facebook.com/NASCAR/" target="_blank" class="icon-facebook">Facebook</a></p>
-				<p><a href="https://twitter.com/NASCAR" target="_blank" class="icon-twitter">Twitter</a></p>
-				<p><a href="https://www.youtube.com/user/TheOfficialNASCAR" target="_blank" class="icon-youtube">Youtube</a></p>
+				<p><a href="https://x.com/nascar" target="_blank" class="icon-twitter">Twitter</a></p>
+				<p><a href="https://www.youtube.com/@NASCAR" target="_blank" class="icon-youtube">Youtube</a></p>
 				<p><a href="https://www.instagram.com/nascar/" target="_blank" class="icon-instagram">Instagram</a></p>
 			</div>
 		</div>
