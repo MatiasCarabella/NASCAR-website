@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 function nombre_usuario($id_usuario){
     global $conexion;
@@ -11,14 +11,16 @@ function nombre_usuario($id_usuario){
 }
 
 function requiere_logeo(){
-    if(isset($_SESSION['id_usuario']) == false){
-        header('location:index.php');
+    if(!isset($_SESSION['id_usuario'])){
+        header('Location: index.php');
+        exit();
     }
 }
 
 function no_admite_logeados(){
-    if(isset($_SESSION['id_usuario']) == true){
-        header('location:index.php');
+    if(isset($_SESSION['id_usuario'])){
+        header('Location: index.php');
+        exit();
     }
 }
 
@@ -29,11 +31,16 @@ function get_noticia($id_noticia){
     if (!$resultado) {
         die('Query Error: ' . mysqli_error($conexion));
     }
-    if (mysqli_num_rows($resultado) > 0){ // cant. filas
-        return $noticia = mysqli_fetch_array($resultado, MYSQLI_ASSOC); // capturar la fila
-    }else{
-        header('location:equipos.php');
+    if (mysqli_num_rows($resultado) > 0){
+        return mysqli_fetch_array($resultado, MYSQLI_ASSOC);
+    } else {
+        return [
+            'id_noticia' => null,
+            'titulo' => 'Noticia no encontrada',
+            'descripcion' => 'La noticia solicitada no está disponible.',
+            'img_noticia' => 'img/default.jpg',
+            'vid_noticia' => null
+        ];
     }
 }
-
 ?>

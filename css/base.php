@@ -559,12 +559,14 @@ main.holder{
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 	background-color: white;
 	flex: 0 0 69%;
+	width:100%;
 	/*position: relative;*/
 }
 
 .noticiaPrincipal h1{
 	padding: 0 10px;
 	margin: 20px 0;
+	
 }
 
 .imagenNoticia{
@@ -613,6 +615,8 @@ main.holder{
 	background-color: white;
 	overflow: auto;
 	display: inline-block;
+	width:100%;
+	height: 100%;
 }
 
 .noticia.arriba{
@@ -1657,6 +1661,52 @@ input:-webkit-autofill:active  {
 
 .comentarios .titulo h1:after{
 	width: 75%;
+}
+
+/* Skeleton Loader Styles */
+.skeleton {
+	background-color: #e0e0e0;
+	border-radius: 4px;
+	margin: 10px 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.skeleton::after {
+	animation: loading 1.5s infinite;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0) 100%);
+	content: '';
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+@keyframes loading {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+.skeleton-img {
+	height: 85%;
+	width: 100%;
+}
+
+.skeleton-text {
+	height: 20px;
+	width: 80%;
+	margin-left: 5%;
+}
+
+.skeleton-title {
+	height: 30px;
+	width: 60%;
+	margin-left: 5%;
 }
 
 /* FIN */

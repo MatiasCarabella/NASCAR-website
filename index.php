@@ -33,10 +33,16 @@
 						<img src="<?php echo $noticia['img_noticia']?>" class="posterImage center" name="posterImage" height="384px" style="position: absolute; top: 0; left: 0; bottom: 0; right: 0">
 				</div>
 				<?php }else{ ?>
-					<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']?>" class="center"></div>
-				<?php } ?>
-				<h1><?php echo utf8_encode($noticia['titulo'])?></h1>
-				<p><?php echo utf8_encode($noticia['descripcion'])?></p>
+					<div class="noticia arriba ">
+						<div class="skeleton skeleton-img"></div>
+						<div class="skeleton skeleton-title"></div>
+						<div class="skeleton skeleton-text"></div>
+            		</div>
+				<?php 
+			/*<h1><?php echo utf8_encode($noticia['titulo'])?></h1>
+			 <p><?php echo $noticia['descripcion']?></p>*/
+			} ?>
+				
 			</div>
 			<div class="noticiasRelacionadas right" >
 				<?php 
@@ -84,10 +90,9 @@
 			</div>
 		</div>	
 	</main>
-
+	<?php include('inc/footer.php');?>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/video-hover.js"></script> 
 </body>
 </html>
 
-<?php include('inc/footer.php') ?>
