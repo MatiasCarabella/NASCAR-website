@@ -100,7 +100,7 @@
     setTimeout(function() {
         document.body.style.visibility = "visible";
     }, 10); 
-</script>
+	</script>
 </body>
 </html>
 

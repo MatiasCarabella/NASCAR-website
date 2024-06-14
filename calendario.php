@@ -11,6 +11,11 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/base.php">
 	<link rel="icon" href="img/favicon.ico">
+	<style>
+		body {
+            visibility: hidden;
+        }
+	</style>
 </head>
 <body class="sitio">
 	<main class="holder degradeCalendario">
@@ -537,6 +542,13 @@
 	</main>
 
 	<?php include('inc/footer.php') ?>
+
+	<script>
+    // Delay the display of the body content to prevent Flash of Unstyled Content (FOUC)
+    setTimeout(function() {
+        document.body.style.visibility = "visible";
+    }, 10); 
+	</script>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/scroll-to-top.js"></script>
