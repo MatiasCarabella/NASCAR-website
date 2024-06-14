@@ -284,12 +284,12 @@ footer h4{
 	margin-bottom: 17px;
 }
 
-.icon-facebook:hover::before{
+.icon-facebook2:hover::before{
 	color: #3b5998;
 }
 
-.icon-twitter:hover::before{
-	color: #00ACEE;
+.icon-x:hover::before{
+	color: white;
 }
 
 .icon-youtube:hover::before{
@@ -359,28 +359,28 @@ i {
 /* FIN FLECHA */
 
 /* ICONOS */
-
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?dotf1q');
-  src:  url('../fonts/icomoon.eot?dotf1q#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?dotf1q') format('truetype'),
-    url('../fonts/icomoon.woff?dotf1q') format('woff'),
-    url('../fonts/icomoon.svg?dotf1q#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?1mit12');
+  src:  url('../fonts/icomoon.eot?1mit12#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?1mit12') format('truetype'),
+    url('../fonts/icomoon.woff?1mit12') format('woff'),
+    url('../fonts/icomoon.svg?1mit12#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-.icon-facebook:before,
-.icon-instagram:before,
+.icon-x:before,
 .icon-twitter:before,
-.icon-youtube:before,
+.icon-envelop:before,
 .icon-user:before,
 .icon-lock:before,
 .icon-eye:before,
 .icon-eye-blocked:before,
-.icon-envelope:before {
+.icon-facebook2:before,
+.icon-instagram:before,
+.icon-youtube:before {
   font-family: icomoon;
   font-size: 25px;
   margin-right: 8px;
@@ -388,31 +388,40 @@ i {
   color:  #808080;
 }
 
-.icon-facebook:before {
+.icon-x:before {
+  content: "\e900";
+}
+.icon-twitter:before {
+  content: "\e900";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-lock:before {
+  content: "\e98f";
+}
+.icon-eye:before {
+  content: "\e9ce";
+}
+.icon-eye-blocked:before {
+  content: "\e9d1";
+}
+.icon-facebook2:before {
   content: "\ea91";
 }
 .icon-instagram:before {
   content: "\ea92";
 }
-.icon-twitter:before {
-  content: "\ea96";
-}
 .icon-youtube:before {
   content: "\ea9d";
 }
-.icon-user:before {
-  content: "\f007";
+.icon-envelop:before {
+	font-size: 20px;
+	margin-left: -2px;
 }
-.icon-lock:before {
-  content: "\f023";
-}
-
-.icon-envelope:before {
-  content: "\f0e0";
-  font-size: 20px;
-  margin-left: -2px;
-}
-
 .icon-eye:before,
 .icon-eye-blocked:before{
   font-size: 20px;
@@ -420,7 +429,6 @@ i {
   cursor: pointer;
   transition: opacity 750ms ease-in-out;
 }
-
 .icon-eye:hover::before,
 .icon-eye-blocked:hover::before{
 	color: black;
@@ -1555,7 +1563,7 @@ input:-webkit-autofill:active  {
 	bottom: 0.45em; 
 }
 
-.formulario .iconoIzq.icon-envelope{
+.formulario .iconoIzq.icon-envelop{
 	bottom: 0.55em; 
 }
 

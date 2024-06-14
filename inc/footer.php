@@ -27,8 +27,8 @@
 			</div>
 			<div class="columna redes">
 				<h4>REDES</h4>
-				<p><a href="https://www.facebook.com/NASCAR/" target="_blank" class="icon-facebook">Facebook</a></p>
-				<p><a href="https://x.com/nascar" target="_blank" class="icon-twitter">Twitter</a></p>
+				<p><a href="https://www.facebook.com/NASCAR/" target="_blank" class="icon-facebook2">Facebook</a></p>
+				<p><a href="https://x.com/nascar" target="_blank" class="icon-x">X (Twitter)</a></p>
 				<p><a href="https://www.youtube.com/@NASCAR" target="_blank" class="icon-youtube">Youtube</a></p>
 				<p><a href="https://www.instagram.com/nascar/" target="_blank" class="icon-instagram">Instagram</a></p>
 			</div>

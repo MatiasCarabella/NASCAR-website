@@ -33,7 +33,7 @@
 							</div>
 							<div class="campo">
 								<input type="text" placeholder="Email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="ejemplo@ejemplo.com" name="email">
-								<span class="iconoIzq icon-envelope" id="iconoMail"></span>
+								<span class="iconoIzq icon-envelop" id="iconoMail"></span>
 							</div>
 							<div class="campo">
 								<input type="password" placeholder="Contraseña" id="password" required pattern=".{8,}" title="La contraseña debe tener un mínimo de 8 caracteres." name="password"  maxlength="128" autocomplete="off">
