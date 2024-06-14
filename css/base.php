@@ -1,8 +1,6 @@
-<?php header("Content-type: text/css");?>
 <?php 
-	
+	header("Content-type: text/css");
 	session_start();
-
 ?>
 
 /* GENERAL */
@@ -267,7 +265,7 @@ footer h4{
 }
 
 .navegacion p:not(:last-child){
-	margin-bottom: <?php echo (isset($_SESSION['id_usuario'])) ? '10px' : '5px' ?>;
+	margin-bottom: <?php echo (isset($_SESSION['id_usuario'])) ? '10px' : '5px'; ?>;
 }
 
 .redes{
@@ -1701,7 +1699,5 @@ input:-webkit-autofill:active  {
 	width: 80%;
 	margin-left: 2.5%;
 }
-
-
 
 /* FIN */
