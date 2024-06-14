@@ -38,7 +38,7 @@ function get_noticia($id_noticia){
             'id_noticia' => null,
             'titulo' => 'Noticia no encontrada',
             'descripcion' => 'La noticia solicitada no está disponible.',
-            'img_noticia' => 'img/default.jpg',
+            'img_noticia' => null,
             'vid_noticia' => null
         ];
     }

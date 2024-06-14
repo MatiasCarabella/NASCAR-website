@@ -560,7 +560,6 @@ main.holder{
 	background-color: white;
 	flex: 0 0 69%;
 	width:100%;
-	/*position: relative;*/
 }
 
 .noticiaPrincipal h1{
@@ -602,11 +601,17 @@ main.holder{
 }
 
 .noticiasRelacionadas{
-	margin: 0 0 0 0.5em;
 	flex: 0 0 29%;
+	box-sizing: border-box;
 	display: flex;
+	margin: 0 0 0 0.5em;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.noticiasRelacionadas .noticia .imagenNoticia img{
+	height: 200px;
+	object-fit: cover;
 }
 
 .noticia{
@@ -634,16 +639,7 @@ main.holder{
 .otrasNoticias .noticia{
 	box-sizing: border-box;
 	width: 32%;
-	/*margin: 0 0.6em 1.5em 0.6em;*/
 }
-
-/*.otrasNoticias .noticia:first-child{
-	margin-left: 1.5em;
-}
-
-.otrasNoticias .noticia:last-child{
-	margin-right: 1.5em;
-}*/
 
 .otrasNoticias .noticia .imagenNoticia img{
 	height: 200px;
@@ -915,27 +911,22 @@ main.holder{
 .calendario .circuito:hover .descripcion h2.largo.phoenix{
 	font-size: 1.4em;
 	padding-top: 2px;
-	padding-bottom: 0px;
-	transition: all 0.3s ease-in-out;
 }
 
 .calendario .circuito:hover .descripcion h2.largo.richmond{
 	font-size: 1.3em;
-	padding-top: 3px;
-	padding-bottom: 0px;
-	transition: all 0.3s ease-in-out;
+}
+
+.calendario .circuito:hover .descripcion h2.largo.charlotte{
+	font-size: 1.15em;
 }
 
 .calendario .circuito .descripcion h2.extraLarge{
-	font-size: 1.2em;
-	padding-left: 0px;
-	padding-right: 0px;
-	transition: all 0.3s ease-in-out;
+	font-size: 1em;
 }
 
 .calendario .circuito:hover .descripcion h2.extraLarge{
-	font-size: 0.9em;
-	padding-top: 5px;
+	font-size: 0.85em;
 }
 
 .calendario h1:not(.titulo){
@@ -1693,20 +1684,24 @@ input:-webkit-autofill:active  {
 }
 
 .skeleton-img {
+	margin: 0;
 	height: 85%;
 	width: 100%;
-}
-
-.skeleton-text {
-	height: 20px;
-	width: 80%;
-	margin-left: 5%;
 }
 
 .skeleton-title {
 	height: 30px;
 	width: 60%;
-	margin-left: 5%;
+	margin-top: 2.5%;
+	margin-left: 2.5%;
 }
+
+.skeleton-text {
+	height: 20px;
+	width: 80%;
+	margin-left: 2.5%;
+}
+
+
 
 /* FIN */

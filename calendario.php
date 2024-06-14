@@ -169,7 +169,7 @@
 					<img src="img/calendario/texasMarzo.jpg" style="object-position: 0 90%;" class="center">
 				</div>
 				<div class="descripcion">
-					<h2>O’Reilly Auto Parts 500</h2>
+					<h2 class="largo">O’Reilly Auto Parts 500</h2>
 					<h4 class="lugar">Texas Motor Speedway</h4>
 					<h4 class="hora">Domingo 31 de Marzo, 3:00 PM</h4>
 					<h4 class="boton"><a href="logIn.php">CONSEGUIR ENTRADAS</a></h4>
@@ -268,7 +268,7 @@
 					<img src="img/calendario/michiganJunio.jpg" style="object-position: 0 90%;" class="center">
 				</div>
 				<div class="descripcion">
-					<h2>FireKeepers Casino 400</h2>
+					<h2 class="largo">FireKeepers Casino 400</h2>
 					<h4 class="lugar">Michigan International Speedway</h4>
 					<h4 class="hora">Lunes 10 de Junio, 5:00 PM</h4>
 					<h4 class="boton"><a href="logIn.php">CONSEGUIR ENTRADAS</a></h4>
@@ -280,7 +280,7 @@
 					<img src="img/calendario/sonomaJunio2.jpg" style="object-position: 0 75%;" class="center">
 				</div>
 				<div class="descripcion">
-					<h2>Toyota / Save Mart 350</h2>
+					<h2 class="largo">Toyota / Save Mart 350</h2>
 					<h4 class="lugar">Sonoma Raceway</h4>
 					<h4 class="hora">Domingo 23 de Junio, 3:00 PM</h4>
 					<h4 class="boton"><a href="logIn.php">CONSEGUIR ENTRADAS</a></h4>
@@ -367,7 +367,7 @@
 					<img src="img/calendario/michiganAgosto2.jpg" style="object-position: 0 100%;" class="center">
 				</div>
 				<div class="descripcion">
-					<h2>Consumers Energy 400</h2>
+					<h2 class="largo">Consumers Energy 400</h2>
 					<h4 class="lugar">Michigan International Speedway</h4>
 					<h4 class="hora">Domingo 11 de Agosto, 3:00 PM</h4>
 					<h4 class="boton"><a href="logIn.php">CONSEGUIR ENTRADAS</a></h4>
@@ -440,7 +440,7 @@
 					<img src="img/calendario/charlotteSeptiembre.jpg" style="object-position: 0 75%;" class="center">
 				</div>
 				<div class="descripcion">
-					<h2 class="largo">Bank of America ROVAL 400</h2>
+					<h2 class="largo charlotte">Bank of America ROVAL 400</h2>
 					<h4 class="lugar largo">Charlotte Motor Speedway Road Course</h4>
 					<h4 class="hora largo">Domingo 29 de Septiembre, 2:30 PM</h4>
 					<h4 class="boton"><a href="logIn.php">CONSEGUIR ENTRADAS</a></h4>
@@ -514,7 +514,7 @@
 					<img src="img/calendario/phoenixNoviembre.jpg" style="object-position: 0 77%;" class="center">
 				</div>
 				<div class="descripcion">
-					<h2 class="largo phoenix">Bluegreen Vacations 500</h2>
+					<h2 class="largo">Bluegreen Vacations 500</h2>
 					<h4 class="lugar">ISM Raceway - Phoenix</h4>
 					<h4 class="hora">Domingo 10 de Noviembre, 2:30 PM</h4>
 					<h4 class="boton"><a href="logIn.php">CONSEGUIR ENTRADAS</a></h4>

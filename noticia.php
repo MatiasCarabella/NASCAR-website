@@ -29,9 +29,9 @@
 			<p><?php echo $noticia['descripcion']; ?></p>
 		</div>
 		<?php if(!is_null($noticia['img_noticia_alt'])){ ?>
-			<img class="imgPrincipal" src="<?php echo $noticia['img_noticia_alt']?>">
-		<?php }else{ ?>
-			<img class="imgPrincipal" src="<?php echo $noticia['img_noticia']?>">
+			<img class="imgPrincipal" src="<?php echo $noticia['img_noticia_alt']; ?>">
+		<?php }else if(!is_null($noticia['img_noticia'])) { ?>
+			<img class="imgPrincipal" src="<?php echo $noticia['img_noticia']; ?>">
 		<?php } ?>
 		<div class="cuerpoNoticia">
 			<p><?php echo $noticia['cuerpo']; ?></p>

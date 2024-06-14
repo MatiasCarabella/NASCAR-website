@@ -31,7 +31,7 @@
 			<?php 
 				$noticia = get_noticia(1);
 			?>
-		    <div class="noticiaPrincipal left" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']?>'" style="cursor: pointer">
+		    <div class="noticiaPrincipal left" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
 		    	<?php if(!is_null($noticia['id_noticia'])){ ?>
 				<div class="contenedorVideo" style="position:relative;">
 						<video src="<?php echo $noticia['vid_noticia']?>" class="watkinsGlenFinalVideo"  id="watkinsGlenFinalVideo" width="100%" height="384px" preload="auto" muted style="object-fit: cover;" onmouseout="this.load();"></video>
@@ -59,7 +59,7 @@
 					$noticia = get_noticia(3);
 				?>
 				<div class="noticia abajo" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
-					<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']?>" class="center"></div>
+					<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']; ?>" class="center"></div>
 					<h3><?php echo $noticia['titulo']; ?></h3>
 					<p><?php echo $noticia['descripcion']; ?></p>
 				</div>
@@ -69,30 +69,30 @@
 			<?php 
 				$noticia = get_noticia(4);
 			?>
-			<div class="noticia" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']?>'" style="cursor: pointer">
-				<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']?>" class="center"></div>
+			<div class="noticia" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
+				<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']; ?>" class="center"></div>
 				<h3><?php echo $noticia['titulo']; ?></h3>
 				<p><?php echo $noticia['descripcion']; ?></p>
 			</div>
 			<?php 
 				$noticia = get_noticia(5);
 			?>
-			<div class="noticia" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']?>'" style="cursor: pointer">
-				<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']?>" class="center"></div>
+			<div class="noticia" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
+				<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']; ?>" class="center"></div>
 				<h3><?php echo $noticia['titulo']; ?></h3>
 				<p><?php echo $noticia['descripcion']; ?></p>
 			</div>
 			<?php 
 				$noticia = get_noticia(6);
 			?>
-			<div class="noticia" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']?>'" style="cursor: pointer">
-				<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']?>" class="center"></div>
+			<div class="noticia" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
+				<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']; ?>" class="center"></div>
 				<h3><?php echo $noticia['titulo']; ?></h3>
 				<p><?php echo $noticia['descripcion']; ?></p>
 			</div>
 		</div>	
 	</main>
-	<?php include('inc/footer.php');?>
+	<?php include('inc/footer.php'); ?>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/video-hover.js"></script> 
 	<script>
