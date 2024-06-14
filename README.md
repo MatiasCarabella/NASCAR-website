@@ -1,4 +1,9 @@
-# NASCAR-Themed University Course Project
+<p align="center">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/NASCAR.svg" width="512" align="center"/>
+</p>
+
+<h1 align="center">NASCAR-website: University Course Project</h1>
+
 ## Project Description
 
 This project is a NASCAR-themed website developed for my 2019 'Professional Webmaster' university course. It features a dynamic homepage with news and comments, a race calendar for the year, championship standings, team information categorized by manufacturer, and user authentication with log-in and registration functionalities.
