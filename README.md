@@ -2,7 +2,7 @@
    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/NASCAR.svg" width="512" align="center"/>
 </p>
 
-<h1 align="center">NASCAR-website: University Course Project</h1>
+<h1 align="center">NASCAR-website: University Course Final Project</h1>
 
 ## Project Description
 
