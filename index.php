@@ -93,7 +93,7 @@
 		</div>	
 	</main>
 	<?php include('inc/footer.php');?>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
 	<script src="js/video-hover.js"></script> 
 	<script>
     // Delay the display of the body content to prevent Flash of Unstyled Content (FOUC)
