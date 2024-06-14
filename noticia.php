@@ -25,8 +25,8 @@
 
 	<main class="holder noticia">
 		<div class="cuerpoNoticia">
-			<h1><?php echo utf8_encode($noticia['titulo'])?></h1>
-			<p><?php echo utf8_encode($noticia['descripcion'])?></p>
+			<h1><?php echo $noticia['titulo']; ?></h1>
+			<p><?php echo $noticia['descripcion']; ?></p>
 		</div>
 		<?php if(!is_null($noticia['img_noticia_alt'])){ ?>
 			<img class="imgPrincipal" src="<?php echo $noticia['img_noticia_alt']?>">
@@ -34,7 +34,7 @@
 			<img class="imgPrincipal" src="<?php echo $noticia['img_noticia']?>">
 		<?php } ?>
 		<div class="cuerpoNoticia">
-			<p><?php echo utf8_encode($noticia['cuerpo'])?></p>
+			<p><?php echo $noticia['cuerpo']; ?></p>
 		</div>
 		<?php if(!is_null($noticia['vid_noticia'])){ ?>
 		<video src="<?php echo $noticia['vid_noticia']?>" width="75%" controls=true poster="img/noticias/watkinsGlenPoster.jpg" style="display: block; margin: 0 auto;"></video>
