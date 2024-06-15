@@ -27,12 +27,12 @@ function no_admite_logeados(){
 function get_noticia($id_noticia){
     global $conexion;
     $query = "SELECT * FROM noticias WHERE id_noticia='$id_noticia'";
-    $resultado = mysqli_query($conexion, $query);
-    if (!$resultado) {
+    $noticias = mysqli_query($conexion, $query);
+    if (!$noticias) {
         die('Query Error: ' . mysqli_error($conexion));
     }
-    if (mysqli_num_rows($resultado) > 0){
-        return mysqli_fetch_array($resultado, MYSQLI_ASSOC);
+    if (mysqli_num_rows($noticias) > 0){
+        return mysqli_fetch_array($noticias, MYSQLI_ASSOC);
     } else {
         return [
             'id_noticia' => null,

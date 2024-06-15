@@ -32,12 +32,21 @@
 				$noticia = get_noticia(1);
 			?>
 		    <div class="noticiaPrincipal left" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
-		    	<?php if(!is_null($noticia['id_noticia'])){ ?>
+		    	<?php 
+						if(!is_null($noticia['id_noticia'])) { 
+							if(!is_null($noticia['vid_noticia'])) { 
+				?>
 				<div class="contenedorVideo" style="position:relative;">
-						<video src="<?php echo $noticia['vid_noticia']?>" class="watkinsGlenFinalVideo"  id="watkinsGlenFinalVideo" width="100%" height="384px" preload="auto" muted style="object-fit: cover;" onmouseout="this.load();"></video>
-						<img src="<?php echo $noticia['img_noticia']?>" class="posterImage center" name="posterImage" height="384px" style="position: absolute; top: 0; left: 0; bottom: 0; right: 0">
+					<video src="<?php echo $noticia['vid_noticia']?>" class="watkinsGlenFinalVideo"  id="watkinsGlenFinalVideo" width="100%" height="100%;" preload="auto" muted style="object-fit: cover;" onmouseout="this.load();"></video>
+					<img src="<?php echo $noticia['img_noticia']?>" class="posterImage center" name="posterImage" height="100%;" style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; object-fit: cover; width:100%;">
 				</div>
-				<?php }else{ ?>
+				<?php } else { ?>
+					<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']?>" class="center"></div>
+				<?php } ?>
+				<h1><?php echo $noticia['titulo']; ?></h1>
+				<p><?php echo $noticia['descripcion']; ?></p>
+			</div>
+				<?php } else { ?>
 					<div class="noticia arriba">
 						<div class="skeleton skeleton-img"></div>
 						<div class="skeleton skeleton-title"></div>
@@ -45,8 +54,6 @@
 						<div class="skeleton skeleton-text" style="margin-top: -4%; width: 80%;"></div>
             		</div>
 				<?php } ?>
-				
-			</div>
 			<div class="noticiasRelacionadas right">
 				<?php 
 					$noticias_ids = [2, 3];

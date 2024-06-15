@@ -570,6 +570,9 @@ main.holder{
 	flex: 0 0 66%;
 	width:100%;
 	height: 628.5px;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: start;
 }
 
 .noticiaPrincipal h1{
@@ -610,7 +613,7 @@ main.holder{
 }
 
 .contenedorVideo{
-	height: 384px;
+	height: 80%;
 }
 
 .contenedorVideo img{
@@ -1644,15 +1647,82 @@ input:-webkit-autofill:active  {
 }
 
 .comentarios{
-	padding: 1em 1.5em 1em 1.5em;
+	padding: 3em 1.5em 1em 1.5em;
 }
 
-.comentarios p{
-	margin: 0;
-	padding: 0;
+.comentarios-list {
+    margin-top: 20px;
 }
 
-.comentarios a{
+.comentario {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.comentario-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comentario-header img {
+    border-radius: 50%;
+    margin-right: 10px;
+	height: 36px;
+}
+
+.comentario-header span {
+    margin-right: 10px;
+}
+
+.comentario-usuario{
+	font-size: 20px;
+}
+
+.comentario-fecha {
+    font-size: 15px;
+    color: #888;
+}
+
+.comentario-body {
+    margin-top: 15px;
+}
+
+.comentario-form {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.comentario-form-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comentario-form-header img {
+    border-radius: 50%;
+    margin-right: 10px;
+	height: 48px;
+}
+
+.comentario-form-header span {
+    font-size: 20px;
+}
+
+.comentario-form-body {
+    margin-top: 10px;
+}
+
+.comentario-form-footer {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.comentarios a {
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
@@ -1660,12 +1730,7 @@ input:-webkit-autofill:active  {
 }
 
 .comentarios a:hover{
-	/*color:dodgerblue;*/
 	color: #007ac2;
-}
-
-.comentarios .titulo h1:after{
-	width: 75%;
 }
 
 /* Skeleton Loader Styles */
