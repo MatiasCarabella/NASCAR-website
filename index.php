@@ -42,7 +42,7 @@
 						<div class="skeleton skeleton-img"></div>
 						<div class="skeleton skeleton-title"></div>
 						<div class="skeleton skeleton-text"></div>
-						<div class="skeleton skeleton-text" style="margin-top: -4%;"></div>
+						<div class="skeleton skeleton-text" style="margin-top: -4%; width: 80%;"></div>
             		</div>
 				<?php } ?>
 				
