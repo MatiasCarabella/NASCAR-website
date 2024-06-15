@@ -297,7 +297,7 @@ footer h4{
 }
 
 .icon-instagram:hover::before{
-	color: white;
+	color: #e1306c;
 }
 
 /* FIN FOOTER */
@@ -386,6 +386,7 @@ i {
   margin-right: 8px;
   vertical-align: middle;
   color:  #808080;
+  padding-bottom: 5px;
 }
 
 .icon-x:before {
@@ -564,14 +565,14 @@ main.holder{
 	margin: 0 0.5em 0 0;
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 	background-color: white;
-	flex: 0 0 69%;
+	flex: 0 0 66%;
 	width:100%;
+	height: 628.5px;
 }
 
 .noticiaPrincipal h1{
 	padding: 0 10px;
-	margin: 20px 0;
-	
+	margin: 20px 0;	
 }
 
 .imagenNoticia{
@@ -607,7 +608,7 @@ main.holder{
 }
 
 .noticiasRelacionadas{
-	flex: 0 0 29%;
+	flex: 0 0 32%;
 	box-sizing: border-box;
 	display: flex;
 	margin: 0 0 0 0.5em;
@@ -626,8 +627,12 @@ main.holder{
 	background-color: white;
 	overflow: auto;
 	display: inline-block;
-	width:100%;
-	height: 100%;
+	display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+	width: 100%; 
+	height:100%;
 }
 
 .noticia.arriba{
@@ -1560,15 +1565,16 @@ input:-webkit-autofill:active  {
 }
 
 .formulario .iconoIzq.icon-user{
-	bottom: 0.45em; 
+	margin-left: -0.25em;
+	bottom: 0.75em; 
 }
 
 .formulario .iconoIzq.icon-envelop{
-	bottom: 0.55em; 
+	bottom: 0.70em; 
 }
 
 .formulario .iconoIzq.icon-lock{
-	bottom: 0.45em; 
+	bottom: 0.80em; 
 }
 
 .formulario .noCoinciden{
@@ -1664,7 +1670,7 @@ input:-webkit-autofill:active  {
 .skeleton {
 	background-color: #e0e0e0;
 	border-radius: 4px;
-	margin: 10px 0;
+	margin: 0px;
 	overflow: hidden;
 	position: relative;
 }
@@ -1691,21 +1697,36 @@ input:-webkit-autofill:active  {
 
 .skeleton-img {
 	margin: 0;
-	height: 85%;
+	height: 75%;
 	width: 100%;
 }
-
 .skeleton-title {
-	height: 30px;
-	width: 60%;
-	margin-top: 2.5%;
-	margin-left: 2.5%;
+	width: 75%;
+	height: 8%;
+	margin-left: 5%;
+	margin-bottom: -5px;
+}
+.skeleton-text {
+	height: 6%;
+	width: 85%;
+	margin-top: 0px;
+	margin-left: 5%;
+	margin-bottom: 5%;
 }
 
-.skeleton-text {
-	height: 20px;
-	width: 80%;
+.noticiaPrincipal .skeleton-img{
+	height: 85%;
+}
+.noticiaPrincipal .skeleton-title{
+	width: 65%;
+	height: 5%;
 	margin-left: 2.5%;
+	margin-bottom: 0px;
+}
+.noticiaPrincipal .skeleton-text{
+	height: 3.5%;
+	margin-left: 2.5%;
+	margin-bottom: 2.5%;
 }
 
 /* FIN */

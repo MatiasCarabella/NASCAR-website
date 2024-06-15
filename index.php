@@ -46,15 +46,23 @@
 				<?php } ?>
 				
 			</div>
-			<div class="noticiasRelacionadas right" >
+			<div class="noticiasRelacionadas right">
 				<?php 
 					$noticia = get_noticia(2);
+					if(!is_null($noticia['id_noticia'])){
 				?>
 				<div class="noticia arriba" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
 					<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']; ?>" class="center"></div>
 					<h3><?php echo $noticia['titulo']; ?></h3>
 					<p><?php echo $noticia['descripcion']; ?></p>
 				</div>
+				<?php }else{ ?>
+					<div class="noticia arriba">
+						<div class="skeleton skeleton-img"></div>
+						<div class="skeleton skeleton-title"></div>
+						<div class="skeleton skeleton-text"></div>
+            		</div>
+				<?php } ?>
 				<?php 
 					$noticia = get_noticia(3);
 				?>
