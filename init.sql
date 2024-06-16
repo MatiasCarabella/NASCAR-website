@@ -39,8 +39,20 @@ VALUES (
 );
 
 
-INSERT INTO noticias (title, description, image_main, body) VALUES ('Sample News 2', 'This is a sample news description.', 'img/noticias/ambrose-winner/image_main.jpg', 'Cuerpo Lorem Cuerpo Lorem');
-INSERT INTO noticias (title, description, image_main, body) VALUES ('Sample News 3', 'This is a sample news description.', 'img/noticias/busch-interview/image_main.jpg', 'Cuerpo Lorem Cuerpo Lorem');
+INSERT INTO noticias (title, description, image_main, body) VALUES (
+    '¡Marcos Ambrose gana de nuevo en Watkins Glen!',
+    'El piloto australiano logró reivindicar su triunfo del año pasado.',
+    'img/noticias/ambrose-winner/image_main.jpg',
+    'El piloto australiano Marcos Ambrose se alzó con una victoria espectacular en la carrera de este fin de semana en Watkins Glen. Esta victoria no solo es un hito personal para Ambrose, sino que también reafirma su dominio en este circuito, habiendo ganado también el año pasado en circunstancias igualmente emocionantes.\n\nLa carrera de este año será recordada por su final de infarto, con Ambrose manteniendo la calma y la precisión en medio del caos, del cual logró emerger victorioso.\n\nEsta victoria es especialmente significativa para Ambrose, quien ha demostrado ser uno de los mejores pilotos en circuitos de carretera, destacándose entre sus competidores por su habilidad y determinación. Con esta victoria, Ambrose no solo añade un segundo trofeo a su colección de la máxima categoría, sino que también se asegura un lugar destacado en la historia del circuito.'
+);
+
+INSERT INTO noticias (title, description, image_main, body) VALUES (
+    '"Es decepcionante"',
+    'Kyle Busch expresa su frustración tras la colisión en la última vuelta.',
+    'img/noticias/kyle-busch-interview/image_main.jpg',
+    'El emocionante desenlace de la carrera en Watkins Glen dejó a algunos de sus protagonistas eufóricos, pero siempre existe la contracara de los menos afortunados:\n\nKyle Busch (#18) era el líder de la carrera hasta la última vuelta, cuando un contacto con Brad Keselowski lo hizo perder el control y acabó contra uno de los muros del circuito, relegándolo así al séptimo lugar.\n\nEn una entrevista posterior a la carrera, Busch no ocultó su frustración: "Es decepcionante, estábamos en una posición perfecta para ganar. Llevamos el coche al límite durante toda la carrera y, en la última vuelta, el incidente con Keselowski me dejó fuera. Es una forma muy dura de perder una carrera".\n\nA pesar de su evidente descontento, Busch extendió sus felicitaciones al ganador: "Quiero felicitar a Marcos [Ambrose] por su victoria. Hizo una gran carrera y supo aprovechar su oportunidad en el momento justo. Aunque no estoy contento con cómo terminó para nosotros, así es el automovilismo, y hay que seguir adelante y pensar en la próxima carrera".'
+);
+
 INSERT INTO noticias (title, description, image_main, body) VALUES ('Sample News 4', 'This is a sample news description.', 'img/default.jpg', 'Cuerpo Lorem Cuerpo Lorem');
 INSERT INTO noticias (title, description, image_main, body) VALUES ('Sample News 5', 'This is a sample news description.', 'img/default.jpg', 'Cuerpo Lorem Cuerpo Lorem');
 INSERT INTO noticias (title, description, image_main, body) VALUES ('Sample News 6', 'This is a sample news description.', 'img/default.jpg', 'Cuerpo Lorem Cuerpo Lorem');
