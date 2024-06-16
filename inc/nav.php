@@ -6,6 +6,7 @@
 	    $usuario = nombre_usuario($_SESSION['id_usuario']);
 	}
 ?>
+<!DOCTYPE html>
 <nav>
     <div class="holder">
         <a href="index.php"><img class="logo" src="img/nascarLogo.png"></a>

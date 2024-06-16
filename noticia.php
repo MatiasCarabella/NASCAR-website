@@ -1,9 +1,9 @@
 <?php
-    include "inc/nav.php";
-    $estaPagina = "Noticia";
+include "inc/nav.php";
+$estaPagina = "Noticia";
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,13 +19,15 @@
 </head>
 <body class="sitio">
 
-    <?php if (isset($_GET["id_noticia"])) {
+    <?php 
+    if (isset($_GET["id_noticia"])) {
         $id_noticia = $_GET["id_noticia"];
         $noticia = get_noticia($id_noticia);
     } else {
         header("location:index.php");
         exit();
-    } ?>
+    }
+    ?>
 
     <main class="holder noticia">
         <?php if (!is_null($noticia["id_noticia"])) { ?>
@@ -33,22 +35,16 @@
                 <h1><?php echo utf8_decode($noticia["titulo"]); ?></h1>
                 <p><?php echo utf8_decode($noticia["descripcion"]); ?></p>
             </div>
-            <?php if (!is_null($noticia["img_noticia_alt"])) { ?>
-                <img class="imgPrincipal" src="<?php echo $noticia[
-                    "img_noticia_alt"
-                ]; ?>">
-            <?php } elseif (!is_null($noticia["img_noticia"])) { ?>
-                <img class="imgPrincipal" src="<?php echo $noticia[
-                    "img_noticia"
-                ]; ?>">
+            <?php if (!is_null($noticia["img_noticia"])) { ?>
+                <img class="imgPrincipal" src="<?php echo $noticia["img_noticia"]; ?>">
             <?php } ?>
             <div class="cuerpoNoticia">
                 <p><?php echo utf8_decode($noticia["cuerpo"]); ?></p>
             </div>
-            <?php if (!is_null($noticia["vid_noticia"])) { ?>
-            <video src="<?php echo $noticia[
-                "vid_noticia"
-            ]; ?>" width="75%" controls=true poster="<?php echo $noticia["vid_preview"]; ?>" style="display: block; margin: 0 auto;"></video>
+            <?php if (!is_null($noticia["video_embed_url"])) { ?>
+            <div class="videoNoticia">
+                <iframe width="560" height="315" src="<?php echo $noticia["video_embed_url"]; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <?php } ?>
             <div class="comentarios">
                 <div class="titulo"><h1 class="titulo" style="margin-top: 4px;">Comentarios</h1></div>
@@ -58,20 +54,13 @@
                     "SELECT id_usuario, comentario, fecha FROM comentarios WHERE id_noticia = $id_noticia ORDER BY fecha ASC LIMIT 10"
                 );
                 if ($comentarios && mysqli_num_rows($comentarios) > 0) { ?>
-
                 <div class="comentarios-list">
-                    <?php while (
-                        $comentario = mysqli_fetch_array($comentarios)
-                    ) { ?>
+                    <?php while ($comentario = mysqli_fetch_array($comentarios)) { ?>
                     <div class="comentario">
                         <div class="comentario-header">
                             <img src="img/usuarios/default.png">
-                            <span class="comentario-usuario"><?php echo nombre_usuario(
-                                $comentario["id_usuario"]
-                            ); ?></span>
-                            <span class="comentario-fecha"><?php echo $comentario[
-                                "fecha"
-                            ]; ?></span>
+                            <span class="comentario-usuario"><?php echo nombre_usuario($comentario["id_usuario"]); ?></span>
+                            <span class="comentario-fecha"><?php echo $comentario["fecha"]; ?></span>
                         </div>
                         <div class="comentario-body">
                             <p><?php echo $comentario["comentario"]; ?></p>
@@ -80,22 +69,16 @@
                     <?php } ?>
                 </div>
                 <?php } else { ?>
-                <p>Aún no hay comentarios, ¡se el primero!</p>
+                <p>Aún no hay comentarios, ¡sé el primero!</p>
                 <?php } ?>
                 <?php if (isset($_SESSION["id_usuario"])) { ?>
                 <form action="procesar_comentario.php" method="POST">
-                    <input type="hidden" name="id_noticia" value="<?php echo $noticia[
-                        "id_noticia"
-                    ]; ?>">
-                    <input type="hidden" name="id_usuario" value="<?php echo $_SESSION[
-                        "id_usuario"
-                    ]; ?>">
+                    <input type="hidden" name="id_noticia" value="<?php echo $noticia["id_noticia"]; ?>">
+                    <input type="hidden" name="id_usuario" value="<?php echo $_SESSION["id_usuario"]; ?>">
                     <div class="comentario-form">
                         <div class="comentario-form-header">
                             <img src="img/usuarios/default.png">
-                            <span><?php echo nombre_usuario(
-                                $_SESSION["id_usuario"]
-                            ); ?></span>
+                            <span><?php echo nombre_usuario($_SESSION["id_usuario"]); ?></span>
                         </div>
                         <div class="comentario-form-body">
                             <textarea name="comentario" placeholder="¿Cuál es tu opinión? ¡Únete a la conversación dejando un comentario!" rows="5" cols="77"></textarea>

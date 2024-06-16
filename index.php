@@ -34,10 +34,10 @@
 		    <div class="noticiaPrincipal left" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
 		    	<?php 
 					if(!is_null($noticia['id_noticia'])) { 
-						if(!is_null($noticia['vid_noticia'])) { 
+						if(!is_null($noticia['video_preview'])) { 
 				?>
 				<div class="contenedorVideo" style="position:relative;">
-					<video src="<?php echo $noticia['vid_noticia']; ?>" class="watkinsGlenFinalVideo"  id="watkinsGlenFinalVideo" width="100%" height="100%;" preload="auto" muted style="object-fit: cover;" onmouseout="this.load();"></video>
+					<video src="<?php echo $noticia['video_preview']; ?>" class="watkinsGlenFinalVideo"  id="watkinsGlenFinalVideo" width="100%" height="100%;" preload="auto" muted style="object-fit: cover;" onmouseout="this.load();"></video>
 					<img src="<?php echo $noticia['img_noticia']; ?>" class="posterImage center" name="posterImage" height="100%;" style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; object-fit: cover; width:100%;">
 				</div>
 				<?php } else { ?>
