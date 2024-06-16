@@ -1,8 +1,7 @@
 <?php
-include ('inc/nav.php');
-$estaPagina = 'LogIn';
+	include ('inc/nav.php');
+	$estaPagina = 'LogIn';
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,10 +18,7 @@ $estaPagina = 'LogIn';
 	</style>
 </head>
 <body class="sitio">
-
-
 	<?php no_admite_logeados(); ?>
-	
 	<main class="holder login">
 		<div class="caja logeo" id="caja" name="login">
 			<h1 style="text-align: center;">Iniciar Sesión</h1>
@@ -43,11 +39,11 @@ $estaPagina = 'LogIn';
 						</div>
 						<p>¿No tienes una cuenta? <a href="signUp.php">Regístrate</a></p>
 						<?php
-if (isset($_GET['logeo']) && $_GET['logeo'] == 'error') {
-?>
+							if (isset($_GET['logeo']) && $_GET['logeo'] == 'error') {
+						?>
 						<p class="textoLogeo" style="position: absolute;">Usuario y/o contraseña incorrectos.</p>
 						<?php
-} ?>
+							} ?>
 				</form>
 		</div>
 	</main>

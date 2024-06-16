@@ -1,30 +1,51 @@
 <?php
+include('conexion.php');
 
-	include('conexion.php');
+// Check if POST data is set
+if (isset($_POST['usuario']) && isset($_POST['password'])) {
+    $usuario = $_POST['usuario'];
+    $password = $_POST['password'];
 
-	$usuario=$_POST['usuario'];
-	$password=$_POST['password'];
+    // Use prepared statements to prevent SQL injection
+    $query = $conexion->prepare("SELECT id_usuario, password FROM usuarios WHERE usuario = ?");
+    if ($query === false) {
+        // Debugging purposes: Log the error or display it
+        die('Prepare Error: ' . htmlspecialchars($conexion->error));
+    }
 
-	$query = "SELECT id_usuario FROM usuarios WHERE usuario='$usuario' AND password='$password'";
-	$resultado = mysqli_query($conexion, $query);
+    $query->bind_param('s', $usuario);
+    if (!$query->execute()) {
+        // Debugging purposes: Log the error or display it
+        die('Execute Error: ' . htmlspecialchars($query->error));
+    }
 
-	if (mysqli_num_rows($resultado) > 0){ // cant. filas
-		session_start(); // inicializar
-		$fila = mysqli_fetch_array($resultado); // capturar la fila
+    $resultado = $query->get_result();
 
-		$_SESSION['id_usuario'] = $fila['id_usuario']; // copio el idusuario en una variable de SESSION
+    if ($resultado) {
+        if ($resultado->num_rows > 0) {
+            $fila = $resultado->fetch_assoc();
 
-		$miMail = 'matias.carabella@outlook.com'; // mail propio
-		$remitente = "From: sitio web <uwu@NASCAR.com>";
-		$asunto = $usuario . ' se logeó en el sitio.';
-		$contenido = 'Saludos'; // nueva linea
+            // Verify password
+            if (password_verify($password, $fila['password'])) {
+                session_start();
+                $_SESSION['id_usuario'] = $fila['id_usuario'];
 
-		mail($miMail, $asunto, $contenido, $remitente);
-
-		header("location:index.php"); // redirecciona a la pagina visitas.php
-
-	}else{
-		header('location:logIn.php?logeo=error#login');
-	}
-	
+                header("location:index.php");
+                exit();
+            } else {
+                header('location:logIn.php?logeo=error#login');
+                exit();
+            }
+        } else {
+            header('location:logIn.php?logeo=error#login');
+            exit();
+        }
+    } else {
+        // Debugging purposes: Log the error or display it
+        die('Query Error: ' . htmlspecialchars($conexion->error));
+    }
+} else {
+    header('location:logIn.php?logeo=error#login');
+    exit();
+}
 ?>

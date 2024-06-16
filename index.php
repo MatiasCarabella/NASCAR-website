@@ -3,9 +3,9 @@
 	$estaPagina='Home';
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>NASCAR</title>
     <link rel="stylesheet" href="css/normalize.css">
@@ -43,8 +43,8 @@
 				<?php } else { ?>
 					<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']?>" class="center"></div>
 				<?php } ?>
-				<h1><?php echo $noticia['titulo']; ?></h1>
-				<p><?php echo $noticia['descripcion']; ?></p>
+				<h1><?php echo utf8_decode($noticia['titulo']); ?></h1>
+				<p><?php echo utf8_decode($noticia['descripcion']); ?></p>
 			</div>
 				<?php } else { ?>
 					<div class="noticia arriba">
@@ -63,8 +63,8 @@
 				?>
 				<div class="noticia <?php echo $index === 0 ? 'arriba' : ''; ?>" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
 					<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']; ?>" class="center"></div>
-					<h3><?php echo $noticia['titulo']; ?></h3>
-					<p><?php echo $noticia['descripcion']; ?></p>
+					<h3><?php echo utf8_decode($noticia['titulo']); ?></h3>
+					<p><?php echo utf8_decode($noticia['descripcion']); ?></p>
 				</div>
 				<?php } else { ?>
 				<div class="noticia <?php echo $index === 0 ? 'arriba' : ''; ?>">
@@ -87,8 +87,8 @@
 			?>
 			<div class="noticia" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
 				<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']; ?>" class="center"></div>
-				<h3><?php echo $noticia['titulo']; ?></h3>
-				<p><?php echo $noticia['descripcion']; ?></p>
+				<h3><?php echo utf8_decode($noticia['titulo']); ?></h3>
+				<p><?php echo utf8_decode($noticia['descripcion']); ?></p>
 			</div>
 			<?php } else { ?>
 			<div class="noticia">

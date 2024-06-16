@@ -1631,11 +1631,10 @@ input:-webkit-autofill:active  {
 }
 
 .cuerpoNoticia{
-	padding: 1em 1.5em 1em 1.5em;
+	padding: 2.5em 1.5em 1em 2em;
 }
 
 .cuerpoNoticia h1{
-	padding-top: 10px;
 	margin-top: 0;
 }
 

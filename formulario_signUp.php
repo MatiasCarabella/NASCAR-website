@@ -1,34 +1,49 @@
 <?php
 
-	include('conexion.php'); 
+include('conexion.php'); 
 
-	$usuario=$_POST['usuario'];
-	$email=$_POST['email'];
-	$password=$_POST['password'];
-	// $confirmPassword=$_POST['confirmPassword'];
-	$confirmPassword=$_POST['confirm_password'];
+$usuario = $_POST['usuario'];
+$email = $_POST['email'];
+$password = $_POST['password'];
+$confirmPassword = $_POST['confirm_password'];
 
-	$resultado = mysqli_query($conexion, "INSERT INTO usuarios VALUES (NULL, '$usuario', '$email', '$password')");
+// Check if all required POST data is set
+if (isset($usuario, $email, $password, $confirmPassword)) {
 
-	if($resultado!=0) {
+    // Validate input data (basic checks)
+    if (empty($usuario) || empty($email) || empty($password) || empty($confirmPassword)) {
+        header('location:signUp.php?envio=error&mensaje=Todos los campos son obligatorios#registro');
+        exit();
+    }
 
-		$miMail = 'matias.carabella@outlook.com'; // mail propio
-		$remitente = "From: $usuario <$email>"; // comillas dobles, 'F' mayuscula
-		$asunto = $usuario . ' se registró en el sitio.';
-		$contenido = 'Usuario: ' . $usuario . "\r\n"; // nueva linea
-		$contenido .= 'Email: ' . $email;
+    // Check if passwords match
+    if ($password !== $confirmPassword) {
+        header('location:signUp.php?envio=error&mensaje=Las contraseñas no coinciden#registro');
+        exit();
+    }
 
-		mail($miMail, $asunto, $contenido, $remitente);
+    // Hash the password
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-		$remitente_usuario = "From: sitio web <uwu@NASCAR.com>";
-		$asunto_usuario = 'Registro completado';
-		$contenido_usuario = 'Hola ' . $usuario . ', tu cuenta fue creada con éxito.'."\r\n";
+    // Prepare the INSERT statement using prepared statements
+    $stmt = $conexion->prepare("INSERT INTO usuarios (usuario, password, email) VALUES (?, ?, ?)");
+    if ($stmt === false) {
+        // Debugging purposes: Log the error or display it
+        die('Prepare Error: ' . htmlspecialchars($conexion->error));
+    }
 
-		mail($email, $asunto_usuario, $contenido_usuario, $remitente_usuario);
+    // Bind parameters and execute the statement
+    $stmt->bind_param('sss', $usuario, $hashedPassword, $email);
+    if (!$stmt->execute()) {
+        // Debugging purposes: Log the error or display it
+        die('Execute Error: ' . htmlspecialchars($stmt->error));
+    }
 
-		header('location:signUp.php?envio=ok#registro');
-		//header > redireccionar
-	}else{
-		header('location:signUp.php?envio=error#registro');
-	}
+    // If execution reaches here, registration was successful
+    header('location:signUp.php?envio=ok#registro');
+    exit();
+} else {
+    header('location:signUp.php?envio=error&mensaje=Error en datos recibidos#registro');
+    exit();
+}
 ?>
