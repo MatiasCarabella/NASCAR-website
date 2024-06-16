@@ -48,14 +48,14 @@
             <?php if (!is_null($noticia["vid_noticia"])) { ?>
             <video src="<?php echo $noticia[
                 "vid_noticia"
-            ]; ?>" width="75%" controls=true poster="img/noticias/watkinsGlenPoster.jpg" style="display: block; margin: 0 auto;"></video>
+            ]; ?>" width="75%" controls=true poster="<?php echo $noticia["vid_preview"]; ?>" style="display: block; margin: 0 auto;"></video>
             <?php } ?>
             <div class="comentarios">
                 <div class="titulo"><h1 class="titulo" style="margin-top: 4px;">Comentarios</h1></div>
                 <?php
                 $comentarios = mysqli_query(
                     $conexion,
-                    "SELECT id_usuario, comentario, fecha FROM comentarios WHERE id_noticia = $id_noticia ORDER BY fecha DESC LIMIT 5"
+                    "SELECT id_usuario, comentario, fecha FROM comentarios WHERE id_noticia = $id_noticia ORDER BY fecha ASC LIMIT 10"
                 );
                 if ($comentarios && mysqli_num_rows($comentarios) > 0) { ?>
 
@@ -83,7 +83,6 @@
                 <p>Aún no hay comentarios, ¡se el primero!</p>
                 <?php } ?>
                 <?php if (isset($_SESSION["id_usuario"])) { ?>
-                    <p>¿Cuál es tu opinión? ¡Únete a la conversación dejando un comentario!
                 <form action="procesar_comentario.php" method="POST">
                     <input type="hidden" name="id_noticia" value="<?php echo $noticia[
                         "id_noticia"
@@ -99,7 +98,7 @@
                             ); ?></span>
                         </div>
                         <div class="comentario-form-body">
-                            <textarea name="comentario" rows="5" cols="94"></textarea>
+                            <textarea name="comentario" placeholder="¿Cuál es tu opinión? ¡Únete a la conversación dejando un comentario!" rows="5" cols="77"></textarea>
                         </div>
                         <div class="comentario-form-footer">
                             <input type="submit" value="Enviar">

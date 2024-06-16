@@ -26,21 +26,26 @@ function no_admite_logeados(){
 
 function get_noticia($id_noticia){
     global $conexion;
-    $query = "SELECT * FROM noticias WHERE id_noticia='$id_noticia'";
-    $noticias = mysqli_query($conexion, $query);
-    if (!$noticias) {
-        die('Query Error: ' . mysqli_error($conexion));
-    }
-    if (mysqli_num_rows($noticias) > 0){
-        return mysqli_fetch_array($noticias, MYSQLI_ASSOC);
+    $query = "SELECT * FROM noticias WHERE id_noticia = ?";
+    $stmt = $conexion->prepare($query);
+    if ($stmt) {
+        $stmt->bind_param('i', $id_noticia);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        if ($result->num_rows > 0) {
+            return $result->fetch_array(MYSQLI_ASSOC);
+        } else {
+            return [
+                'id_noticia' => null,
+                'titulo' => 'Noticia no encontrada',
+                'descripcion' => 'La noticia solicitada no está disponible.',
+                'img_noticia' => null,
+                'vid_noticia' => null,
+                'cuerpo' => null
+            ];
+        }
     } else {
-        return [
-            'id_noticia' => null,
-            'titulo' => 'Noticia no encontrada',
-            'descripcion' => 'La noticia solicitada no está disponible.',
-            'img_noticia' => null,
-            'vid_noticia' => null
-        ];
+        die('Query Error: ' . $conexion->error);
     }
 }
 ?>

@@ -1656,7 +1656,6 @@ input:-webkit-autofill:active  {
 
 .comentario {
     padding: 10px;
-    margin-bottom: 10px;
     border-radius: 5px;
 }
 
@@ -1690,7 +1689,6 @@ input:-webkit-autofill:active  {
 }
 
 .comentario-form {
-    margin-top: 20px;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 5px;
@@ -1713,6 +1711,17 @@ input:-webkit-autofill:active  {
     font-size: 20px;
 }
 
+.comentario-form-body textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resize only */
+}
+
 .comentario-form-body {
     margin-top: 10px;
 }
@@ -1721,6 +1730,7 @@ input:-webkit-autofill:active  {
     margin-top: 10px;
     text-align: right;
 }
+
 
 .comentarios a {
 	text-decoration: none;
