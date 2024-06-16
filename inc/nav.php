@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <nav>
     <div class="holder">
-        <a href="index.php"><img class="logo" src="img/nascarLogo.png"></a>
+        <a href="index.php"><img class="logo" src="img/nascar-logo.png"></a>
         <ul>
             <li><a href="calendario.php" <?php echo ($estaPagina == 'Calendario') ? 'class="activo"' : '';?>>CALENDARIO</a></li>
             <li><a href="posiciones.php" <?php echo ($estaPagina == 'Posiciones') ? ' class="activo"' : '';?>>POSICIONES</a></li>

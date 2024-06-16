@@ -38,13 +38,13 @@
 				?>
 				<div class="contenedorVideo" style="position:relative;">
 					<video src="<?php echo $noticia['video_preview']; ?>" class="watkinsGlenFinalVideo"  id="watkinsGlenFinalVideo" width="100%" height="100%;" preload="auto" muted style="object-fit: cover;" onmouseout="this.load();"></video>
-					<img src="<?php echo $noticia['img_noticia']; ?>" class="posterImage center" name="posterImage" height="100%;" style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; object-fit: cover; width:100%;">
+					<img src="<?php echo $noticia['image_main']; ?>" class="posterImage center" name="posterImage" height="100%;" style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; object-fit: cover; width:100%;">
 				</div>
 				<?php } else { ?>
-					<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']?>" class="center"></div>
+					<div class="imagenNoticia"><img src="<?php echo $noticia['image_main']?>" class="center"></div>
 				<?php } ?>
-				<h1><?php echo utf8_decode($noticia['titulo']); ?></h1>
-				<p><?php echo utf8_decode($noticia['descripcion']); ?></p>
+				<h1><?php echo utf8_decode($noticia['title']); ?></h1>
+				<p><?php echo utf8_decode($noticia['description']); ?></p>
 			</div>
 				<?php } else { ?>
 					<div class="noticia arriba">
@@ -62,9 +62,9 @@
 						if (!is_null($noticia['id_noticia'])) {
 				?>
 				<div class="noticia <?php echo $index === 0 ? 'arriba' : ''; ?>" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
-					<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']; ?>" class="center"></div>
-					<h3><?php echo utf8_decode($noticia['titulo']); ?></h3>
-					<p><?php echo utf8_decode($noticia['descripcion']); ?></p>
+					<div class="imagenNoticia"><img src="<?php echo $noticia['image_main']; ?>" class="center"></div>
+					<h3><?php echo utf8_decode($noticia['title']); ?></h3>
+					<p><?php echo utf8_decode($noticia['description']); ?></p>
 				</div>
 				<?php } else { ?>
 				<div class="noticia <?php echo $index === 0 ? 'arriba' : ''; ?>">
@@ -86,9 +86,9 @@
 					if (!is_null($noticia['id_noticia'])) {
 			?>
 			<div class="noticia" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
-				<div class="imagenNoticia"><img src="<?php echo $noticia['img_noticia']; ?>" class="center"></div>
-				<h3><?php echo utf8_decode($noticia['titulo']); ?></h3>
-				<p><?php echo utf8_decode($noticia['descripcion']); ?></p>
+				<div class="imagenNoticia"><img src="<?php echo $noticia['image_main']; ?>" class="center"></div>
+				<h3><?php echo utf8_decode($noticia['title']); ?></h3>
+				<p><?php echo utf8_decode($noticia['description']); ?></p>
 			</div>
 			<?php } else { ?>
 			<div class="noticia">

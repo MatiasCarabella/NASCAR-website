@@ -1,20 +1,20 @@
 <footer>
 	<div class="holder">
 		<div class="footerStart">
-			<a href="index.php"><img class="logo" src="img/nascarLogo.png" class="center"></a>
+			<a href="index.php"><img class="logo" src="img/nascar-logo.png" class="center"></a>
 		</div>
 		<div class="footerContenido">
 				<div class="columna partners">
 				<h4>SOCIOS</h4>
 				<div class="sponsors">
-					<a href="https://www.monsterenergy.com/en-us/" target="_blank"><img src="img/monsterLogo.png" class="logo"></a>
-					<a href="https://www.goodyear.com/" target="_blank"><img src="img/goodyearLogo.png" class="logo"></a>
+					<a href="https://www.monsterenergy.com/en-us/" target="_blank"><img src="img/footer/monster-energy-logo.png" class="logo"></a>
+					<a href="https://www.goodyear.com/" target="_blank"><img src="img/footer/goodyear-logo.png" class="logo"></a>
 				</div>
 				<h4 style="margin-top: 0;">FABRICANTES</h4>
 				<div class="fabricantes">
-					<a href="https://performance.ford.com/" target="_blank"><img src="img/fordLogo.png" class="logo"></a>
-					<a href="https://www.toyota.com/racing" target="_blank"><img src="img/toyotaLogo.png" class="logo"></a>
-					<a href="https://www.chevrolet.com/motorsports" target="_blank"><img src="img/chevroletLogo.png" class="logo"></a>
+					<a href="https://performance.ford.com/" target="_blank"><img src="img/footer/ford-logo.png" class="logo"></a>
+					<a href="https://www.toyota.com/racing" target="_blank"><img src="img/footer/toyota-logo.png" class="logo"></a>
+					<a href="https://www.chevrolet.com/motorsports" target="_blank"><img src="img/footer/chevrolet-logo.png" class="logo"></a>
 				</div>
 			</div>
 			<div class="columna navegacion">

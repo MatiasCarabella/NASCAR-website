@@ -32,14 +32,14 @@ $estaPagina = "Noticia";
     <main class="holder noticia">
         <?php if (!is_null($noticia["id_noticia"])) { ?>
             <div class="cuerpoNoticia">
-                <h1><?php echo utf8_decode($noticia["titulo"]); ?></h1>
-                <p><?php echo utf8_decode($noticia["descripcion"]); ?></p>
+                <h1><?php echo utf8_decode($noticia["title"]); ?></h1>
+                <p><?php echo utf8_decode($noticia["description"]); ?></p>
             </div>
-            <?php if (!is_null($noticia["img_noticia"])) { ?>
-                <img class="imgPrincipal" src="<?php echo $noticia["img_noticia"]; ?>">
+            <?php if (!is_null($noticia["image_main"])) { ?>
+                <img class="imgPrincipal" src="<?php echo $noticia["image_main"]; ?>">
             <?php } ?>
             <div class="cuerpoNoticia">
-                <p><?php echo utf8_decode($noticia["cuerpo"]); ?></p>
+                <p><?php echo utf8_decode($noticia["body"]); ?></p>
             </div>
             <?php if (!is_null($noticia["video_embed_url"])) { ?>
             <div class="videoNoticia">
