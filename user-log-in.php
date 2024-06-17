@@ -1,5 +1,5 @@
 <?php
-include('conexion.php');
+include('db-connection.php');
 
 // Check if POST data is set
 if (isset($_POST['usuario']) && isset($_POST['password'])) {
@@ -33,11 +33,11 @@ if (isset($_POST['usuario']) && isset($_POST['password'])) {
                 header("location:index.php");
                 exit();
             } else {
-                header('location:logIn.php?logeo=error#login');
+                header('location:log-in.php?logeo=error#log-in');
                 exit();
             }
         } else {
-            header('location:logIn.php?logeo=error#login');
+            header('location:log-in.php?logeo=error#log-in');
             exit();
         }
     } else {
@@ -45,7 +45,7 @@ if (isset($_POST['usuario']) && isset($_POST['password'])) {
         die('Query Error: ' . htmlspecialchars($conexion->error));
     }
 } else {
-    header('location:logIn.php?logeo=error#login');
+    header('location:log-in.php?logeo=error#log-in');
     exit();
 }
 ?>

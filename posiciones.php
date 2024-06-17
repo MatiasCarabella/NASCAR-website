@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Posiciones | NASCAR</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/base.php">
+	<link rel="stylesheet" href="css/styles.php">
 	<link rel="icon" href="img/favicon.ico">
 	<style>
 		body {

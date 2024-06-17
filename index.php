@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>NASCAR</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.php">
+    <link rel="stylesheet" href="css/styles.php">
 	<link rel="icon" href="img/favicon.ico">
 	<style>
 		body {
@@ -23,7 +23,7 @@
 			<img src="img/home/homeWallpaper7.jpg" class="center">
 			<div class="textOverlay">
 				<h1>ENTRADAS YA DISPONIBLES</h1>
-				<h2><a href="calendario.php">TEMPORADA 2020 <i class="arrowRight"></i></a></h2>
+				<h2><a href="schedule.php">TEMPORADA 2020 <i class="arrowRight"></i></a></h2>
 			</div>
 		</div>
 		<div class="titulo"><h1 style="margin: 0 0.8em">Últimas Noticias</h1></div>

@@ -1,5 +1,5 @@
 <?php 
-	include('conexion.php');
+	include('db-connection.php');
 
 	$id_noticia=$_POST['id_noticia'];
 	$id_usuario=$_POST['id_usuario'];

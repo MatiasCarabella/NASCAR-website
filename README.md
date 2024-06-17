@@ -42,22 +42,22 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 ├── Dockerfile
 ├── init.sql
 ├── inc/
-│   ├── conexion.php
+│   ├── db-connection.php
 │   ├── funciones.php
 │   ├── nav.php
 │   └── footer.php
 ├── css/
 │   ├── normalize.css
-│   └── base.php
+│   └── styles.php
 ├── js/
 │   └── video-hover.js
 ├── img/
 │   └── ... (image files)
 ├── index.php
-├── calendario.php
+├── schedule.php
 ├── posiciones.php
 ├── equipos.php
-├── logIn.php
+├── log-in.php
 └── register.php
 ```
 

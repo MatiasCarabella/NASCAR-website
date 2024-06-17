@@ -1540,7 +1540,7 @@ input:-webkit-autofill:active  {
 /* INICIO REGISTRO */
 
 .holder.registro{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/registro/registroBackground2.jpg");
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/register/background.jpg");
 	background-position: 100% 0; 
 	background-size: cover;
 	background-repeat: no-repeat;

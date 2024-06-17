@@ -1,7 +1,7 @@
 <?php
 	include 'inc/nav.php';
 	$estaPagina = 'SignUp';
-	$mensaje = '<p>¿Ya tienes una cuenta? <a href="logIn.php">Inicia Sesión</a></p>';
+	$mensaje = '<p>¿Ya tienes una cuenta? <a href="log-in.php">Inicia Sesión</a></p>';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Log In | NASCAR</title>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/base.php">
+		<link rel="stylesheet" href="css/styles.php">
 		<link rel="icon" href="img/favicon.ico">
 		<style>
 			body {
@@ -26,7 +26,7 @@
 		<main class="holder registro">
 			<div class="caja registro" id="caja" name="registro">
 				<h1 style="text-align: center;">Registro</h1>
-					<form action="formulario_signUp.php" method="POST" class="formulario">
+					<form action="user-register.php" method="POST" class="formulario">
 							<div class="campo">
 								<input type="text" placeholder="Usuario" id="usuario" required pattern="\S+" title="El nombre de usuario no puede tener espacios." name="usuario">
 								<span class="iconoIzq icon-user" id="iconoUser"></span>
@@ -51,7 +51,7 @@
 								<input type="submit" value="Registrarse" name="Registrarse" id="submit">
 							</div>
 							<?php if (isset($_GET['envio']) && $_GET['envio'] == 'ok') {
-			$mensaje = '<p class="textoResultado">Registro completado con éxito. <a href="logIn.php">Inicia Sesión</a></p>';
+			$mensaje = '<p class="textoResultado">Registro completado con éxito. <a href="log-in.php">Inicia Sesión</a></p>';
 		} elseif (isset($_GET['envio']) && $_GET['envio'] == 'error') {
 			$mensaje = '<p class="textoResultado">No pudimos procesar tu solicitud</p>';
 		} ?>

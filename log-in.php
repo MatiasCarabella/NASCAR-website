@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Log In | NASCAR</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/base.php">
+	<link rel="stylesheet" href="css/styles.php">
 	<link rel="icon" href="img/favicon.ico">
 	<style>
 		body {
@@ -22,7 +22,7 @@
 	<main class="holder login">
 		<div class="caja logeo" id="caja" name="login">
 			<h1 style="text-align: center;">Iniciar Sesión</h1>
-				<form action="formulario_logIn.php" method="POST" class="formulario">
+				<form action="user-log-in.php" method="POST" class="formulario">
 						<div class="campo">
 							<input type="text" placeholder="Usuario" id="usuario" required pattern="\S+" title="El nombre de usuario no puede tener espacios." name="usuario">
 							<span class="iconoIzq icon-user" id="iconoUser"></span>
@@ -37,7 +37,7 @@
 						<div class="boton">	
 							<input type="submit" value="Iniciar Sesión" name="IniciarSesion">
 						</div>
-						<p>¿No tienes una cuenta? <a href="signUp.php">Regístrate</a></p>
+						<p>¿No tienes una cuenta? <a href="register.php">Regístrate</a></p>
 						<?php
 							if (isset($_GET['logeo']) && $_GET['logeo'] == 'error') {
 						?>

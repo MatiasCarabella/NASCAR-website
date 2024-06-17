@@ -1,5 +1,5 @@
 <?php
-include "conexion.php";
+include "db-connection.php";
 include "inc/nav.php";
 $estaPagina = "Equipos";
 if (isset($_GET["equipo"])) {
@@ -37,7 +37,7 @@ if (isset($_GET["equipo"])) {
 		echo "Equipos";
 	} ?> | NASCAR</title>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/base.php">
+		<link rel="stylesheet" href="css/styles.php">
 		<link rel="icon" href="img/favicon.ico">
 		<style>
 			body {

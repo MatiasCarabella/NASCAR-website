@@ -9,7 +9,7 @@ $estaPagina = "Noticia";
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Noticia | NASCAR</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.php">
+    <link rel="stylesheet" href="css/styles.php">
     <link rel="icon" href="img/favicon.ico">
     <style>
         body {
@@ -89,7 +89,7 @@ $estaPagina = "Noticia";
                     </div>
                 </form>
                 <?php } else { ?>
-                <p>¿Cuál es tu opinión? <a href="logIn.php">Inicia Sesión</a> o <a href="signUp.php">Regístrate</a> para comentar.</p>
+                <p>¿Cuál es tu opinión? <a href="log-in.php">Inicia Sesión</a> o <a href="register.php">Regístrate</a> para comentar.</p>
                 <?php } ?>
             </div>
         <?php } else { ?>
