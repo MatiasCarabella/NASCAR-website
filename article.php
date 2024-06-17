@@ -35,7 +35,9 @@ $estaPagina = "Noticia";
                 <h1><?php echo utf8_decode($noticia["title"]); ?></h1>
                 <p><?php echo utf8_decode($noticia["description"]); ?></p>
             </div>
-            <?php if (!is_null($noticia["image_main"])) { ?>
+            <?php if (!is_null($noticia["image_article"])) { ?>
+                <img class="imgPrincipal" src="<?php echo $noticia["image_article"]; ?>">
+            <?php } elseif (!is_null($noticia["image_main"])) { ?>
                 <img class="imgPrincipal" src="<?php echo $noticia["image_main"]; ?>">
             <?php } ?>
             <div class="cuerpoNoticia">
