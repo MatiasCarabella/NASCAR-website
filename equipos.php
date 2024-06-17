@@ -1,7 +1,7 @@
 <?php
 include "db-connection.php";
-include "inc/nav.php";
 $estaPagina = "Equipos";
+include "inc/nav.php";
 if (isset($_GET["equipo"])) {
     $equipo = $_GET["equipo"];
     switch ($equipo) {
@@ -101,7 +101,7 @@ if (isset($_GET["equipo"])) {
 			<div class="indice equipos">
 				<div class="columnas">
 					<div class="columna ford" id="columnaFord">
-						<div class="contenedorLogo"><img src="img/posiciones/ford-logo.png" class="logo"></div>
+						<div class="contenedorLogo"><img src="img/standings/ford-logo.png" class="logo"></div>
 						<div class="lista">
 							<li><a href="#">Front Row Motorsports</a></li>
 							<li><a href="#">Go FAS Racing</a></li>
@@ -112,14 +112,14 @@ if (isset($_GET["equipo"])) {
 						</div>
 					</div>
 					<div class="columna toyota" id="columnaToyota">
-						<div class="contenedorLogo"><img src="img/posiciones/toyota-logo-notext.png" class="logo"></div>
+						<div class="contenedorLogo"><img src="img/standings/toyota-logo-notext.png" class="logo"></div>
 						<div class="lista">
 							<li><a href="equipos.php?equipo=joeGibbsRacing">Joe Gibbs Racing</a></li>
 							<li><a href="#">Leavine Family Racing</a></li>
 						</div>
 					</div>
 					<div class="columna chevrolet" id="columnaChevrolet">
-						<div class="contenedorLogo"><img src="img/posiciones/chevrolet-logo-notext.png" class="logo"></div>
+						<div class="contenedorLogo"><img src="img/standings/chevrolet-logo-notext.png" class="logo"></div>
 						<div class="lista">
 							<li><a href="#">Chip Ganassi Racing</a></li>
 							<li><a href="#">Germain Racing</a></li>

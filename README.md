@@ -43,7 +43,7 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 ├── init.sql
 ├── inc/
 │   ├── db-connection.php
-│   ├── funciones.php
+│   ├── utils.php
 │   ├── nav.php
 │   └── footer.php
 ├── css/
@@ -55,7 +55,7 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 │   └── ... (image files)
 ├── index.php
 ├── schedule.php
-├── posiciones.php
+├── standings.php
 ├── equipos.php
 ├── log-in.php
 └── register.php

@@ -1,6 +1,6 @@
 <?php 
-	include('inc/nav.php');
 	$estaPagina='Home';
+	include('inc/nav.php');
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -31,7 +31,7 @@
 			<?php 
 				$noticia = get_noticia(1);
 			?>
-		    <div class="noticiaPrincipal left" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
+		    <div class="noticiaPrincipal left" onclick="location.href='article.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
 		    	<?php 
 					if(!is_null($noticia['id_noticia'])) { 
 						if(!is_null($noticia['video_preview'])) { 
@@ -61,7 +61,7 @@
 						$noticia = get_noticia($id);
 						if (!is_null($noticia['id_noticia'])) {
 				?>
-				<div class="noticia <?php echo $index === 0 ? 'arriba' : ''; ?>" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
+				<div class="noticia <?php echo $index === 0 ? 'arriba' : ''; ?>" onclick="location.href='article.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
 					<div class="imagenNoticia"><img src="<?php echo $noticia['image_main']; ?>" class="center"></div>
 					<h3><?php echo utf8_decode($noticia['title']); ?></h3>
 					<p><?php echo utf8_decode($noticia['description']); ?></p>
@@ -85,7 +85,7 @@
 					$noticia = get_noticia($id);
 					if (!is_null($noticia['id_noticia'])) {
 			?>
-			<div class="noticia" onclick="location.href='noticia.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
+			<div class="noticia" onclick="location.href='article.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
 				<div class="imagenNoticia"><img src="<?php echo $noticia['image_main']; ?>" class="center"></div>
 				<h3><?php echo utf8_decode($noticia['title']); ?></h3>
 				<p><?php echo utf8_decode($noticia['description']); ?></p>

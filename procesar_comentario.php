@@ -8,5 +8,5 @@
 
 	$resultado = mysqli_query($conexion, "INSERT INTO comentarios VALUES (NULL, '$id_noticia', '$id_usuario', '$comentario', '$fecha')");
 	
-	header('location:noticia.php?id_noticia='.$id_noticia);
+	header('location:article.php?id_noticia='.$id_noticia);
 ?>

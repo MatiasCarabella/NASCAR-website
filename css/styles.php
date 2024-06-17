@@ -1136,42 +1136,42 @@ main.holder{
 }
 
 .indice.equipos .columnas .columna.ford{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../img/equipos/mustang2019BW.jpg");
+	background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../img/teams/mustang2019BW.jpg");
 	background-position: 50% 0; 
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .indice.equipos .columnas .columna.ford:hover{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/equipos/mustang2019.jpg");
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/teams/mustang2019.jpg");
 	background-position: 50% 0; 
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .indice.equipos .columnas .columna.toyota{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../img/equipos/camry20192BW.jpg");
+	background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../img/teams/camry20192BW.jpg");
 	background-position: 35% 0;  /* 35% */
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .indice.equipos .columnas .columna.toyota:hover{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/equipos/camry20192.jpg");
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/teams/camry20192.jpg");
 	background-position: 35% 0; 
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .indice.equipos .columnas .columna.chevrolet{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../img/equipos/camaro2019BW.jpg");
+	background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../img/teams/camaro2019BW.jpg");
 	background-position: 50% 0; 
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .indice.equipos .columnas .columna.chevrolet:hover{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/equipos/camaro2019.jpg");
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/teams/camaro2019.jpg");
 	background-position: 50% 0; 
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1179,7 +1179,7 @@ main.holder{
 
 body:after{
  display:none;
- content: url("../img/equipos/mustang2019.jpg") url("../img/equipos/camry20192.jpg") url("../img/equipos/camaro2019.jpg");
+ content: url("../img/teams/mustang2019.jpg") url("../img/teams/camry20192.jpg") url("../img/teams/camaro2019.jpg");
 }
 
 .indice.equipos .columnas .columna:not(:last-child){
@@ -1387,7 +1387,7 @@ body:after{
 /* INICIO LOGIN */
 
 .holder.login{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/login/loginWallpaper1.jpg");
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/log-in/background.jpg");
 	background-position: 0 0; 
 	background-size: cover;
 	background-repeat: no-repeat;

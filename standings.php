@@ -1,6 +1,6 @@
-<?php 
-	include('inc/nav.php');
+<?php
 	$estaPagina='Posiciones';
+	include('inc/nav.php');
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -39,9 +39,9 @@
 				<tbody>
 				  <tr>
 				    <td>1</td>
-				    <td><img src="img/posiciones/martinTruex19Logo.png" class="logo numero"><span class="nombre"><b>Martin Truex Jr</b></span></td>
+				    <td><img src="img/standings/martinTruex19Logo.png" class="logo numero"><span class="nombre"><b>Martin Truex Jr</b></span></td>
 				    <td>
-				    	<a href="https://www.toyota.com/racing" target="_blank"><img src="img/posiciones/toyota-logo-notext.png" class="logo toyota"></a>
+				    	<a href="https://www.toyota.com/racing" target="_blank"><img src="img/standings/toyota-logo-notext.png" class="logo toyota"></a>
 				    </td>
 				    <td>3095</td>
 				    <td>0</td>
@@ -53,9 +53,9 @@
 				  </tr>
 				  <tr>
 				    <td>2</td>
-				    <td><img src="img/posiciones/dennyHamlin11Logo.png" class="logo numero"><span class="nombre"><b>Denny Hamlin</b></span></td>
+				    <td><img src="img/standings/dennyHamlin11Logo.png" class="logo numero"><span class="nombre"><b>Denny Hamlin</b></span></td>
 				    <td>
-				    	<a href="https://www.toyota.com/racing" target="_blank"><img src="img/posiciones/toyota-logo-notext.png" class="logo toyota"></a>
+				    	<a href="https://www.toyota.com/racing" target="_blank"><img src="img/standings/toyota-logo-notext.png" class="logo toyota"></a>
 				    </td>
 				    <td>3080</td>
 				    <td>-15</td>
@@ -67,9 +67,9 @@
 				  </tr>
 				  <tr>
 				    <td>3</td>
-				    <td><img src="img/posiciones/kyleBusch18Logo.png" class="logo numero"><span class="nombre"><b>Kyle Busch</b></span></td>
+				    <td><img src="img/standings/kyleBusch18Logo.png" class="logo numero"><span class="nombre"><b>Kyle Busch</b></span></td>
 				    <td>
-				    	<a href="https://www.toyota.com/racing" target="_blank"><img src="img/posiciones/toyota-logo-notext.png" class="logo toyota"></a>
+				    	<a href="https://www.toyota.com/racing" target="_blank"><img src="img/standings/toyota-logo-notext.png" class="logo toyota"></a>
 				    </td>
 				    <td>3080</td>
 				    <td>-15</td>
@@ -81,8 +81,8 @@
 				  </tr>
 				  <tr>
 				    <td>4</td>
-				    <td><img src="img/posiciones/kevinHarvick4Logo.png" class="logo numero"><span class="nombre"><b>Kevin Harvick</b></span></td>
-				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/posiciones/ford-logo.png" class="logo ford"></a></td>
+				    <td><img src="img/standings/kevinHarvick4Logo.png" class="logo numero"><span class="nombre"><b>Kevin Harvick</b></span></td>
+				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/standings/ford-logo.png" class="logo ford"></a></td>
 				    <td>3074</td>
 				    <td>-21</td>
 				    <td>3</td>
@@ -93,10 +93,10 @@
 				  </tr>
 				  <tr>
 				    <td>5</td>
-				    <td><img src="img/posiciones/kyleLarson42Logo.png" class="logo numero"><span class="nombre"><b>Kyle Larson</b></span></td>
+				    <td><img src="img/standings/kyleLarson42Logo.png" class="logo numero"><span class="nombre"><b>Kyle Larson</b></span></td>
 				    <td>
 				    	<a href="https://www.chevrolet.com/motorsports" target="_blank">
-				    	<img src="img/posiciones/chevrolet-logo-notext.png" class="logo chevrolet">
+				    	<img src="img/standings/chevrolet-logo-notext.png" class="logo chevrolet">
 				    </td>
 				    <td>3063</td>
 				    <td>-32</td>
@@ -109,9 +109,9 @@
 				  <tr>
 				    <td>6</td>
 				    <td>
-				    	<img src="img/posiciones/bradKeselowski2Logo2.png" class="logo numero"><span class="nombre"><b>Brad Keselowski</b></span>
+				    	<img src="img/standings/bradKeselowski2Logo2.png" class="logo numero"><span class="nombre"><b>Brad Keselowski</b></span>
 				    </td>
-				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/posiciones/ford-logo.png" class="logo ford"></a></td>
+				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/standings/ford-logo.png" class="logo ford"></a></td>
 				    <td>3052</td>
 				    <td>-43</td>
 				    <td>3</td>
@@ -122,10 +122,10 @@
 				  </tr>
 				  <tr>
 				    <td>7</td>
-				    <td><img src="img/posiciones/alexBowman88Logo.png" class="logo numero"><span class="nombre"><b>Alex Bowman</b></span></td>
+				    <td><img src="img/standings/alexBowman88Logo.png" class="logo numero"><span class="nombre"><b>Alex Bowman</b></span></td>
 				    <td>
 				    	<a href="https://www.chevrolet.com/motorsports" target="_blank">
-				    	<img src="img/posiciones/chevrolet-logo-notext.png" class="logo chevrolet">
+				    	<img src="img/standings/chevrolet-logo-notext.png" class="logo chevrolet">
 				    </td>
 				    <td>3049</td>
 				    <td>-46</td>
@@ -137,10 +137,10 @@
 				  </tr>
 				  <tr>
 				   <td>8</td>
-				    <td><img src="img/posiciones/williamByron24Logo2.png" class="logo numero"><span class="nombre">William Byron</span></td>
+				    <td><img src="img/standings/williamByron24Logo2.png" class="logo numero"><span class="nombre">William Byron</span></td>
 				    <td>
 				    	<a href="https://www.chevrolet.com/motorsports" target="_blank">
-				    	<img src="img/posiciones/chevrolet-logo-notext.png" class="logo chevrolet">
+				    	<img src="img/standings/chevrolet-logo-notext.png" class="logo chevrolet">
 				    </td>
 				    <td>3032</td>
 				    <td>-63</td>
@@ -152,8 +152,8 @@
 				  </tr>
 				  <tr>
 				    <td>9</td>
-				    <td><img src="img/posiciones/joeyLogano22Logo.png" class="logo numero"><span class="nombre"><b>Joey Logano</b></span></td>
-				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/posiciones/ford-logo.png" class="logo ford"></a></td>
+				    <td><img src="img/standings/joeyLogano22Logo.png" class="logo numero"><span class="nombre"><b>Joey Logano</b></span></td>
+				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/standings/ford-logo.png" class="logo ford"></a></td>
 				    <td>3032</td>
 				    <td>-63</td>
 				    <td>2</td>
@@ -164,8 +164,8 @@
 				  </tr>
 				  <tr>
 				    <td>10</td>
-				    <td><img src="img/posiciones/clintBowyer14Logo.png" class="logo numero"><span class="nombre">Clint Bowyer</span></td>
-				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/posiciones/ford-logo.png" class="logo ford"></a></td>
+				    <td><img src="img/standings/clintBowyer14Logo.png" class="logo numero"><span class="nombre">Clint Bowyer</span></td>
+				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/standings/ford-logo.png" class="logo ford"></a></td>
 				    <td>3028</td>
 				    <td>-67</td>
 				    <td>0</td>
@@ -176,10 +176,10 @@
 				  </tr>
 				  <tr>
 				    <td>11</td>
-				    <td><img src="img/posiciones/chaseElliot9Logo.png" class="logo numero"><span class="nombre"><b>Chase Elliot</b></span></td>
+				    <td><img src="img/standings/chaseElliot9Logo.png" class="logo numero"><span class="nombre"><b>Chase Elliot</b></span></td>
 				    <td>
 				    	<a href="https://www.chevrolet.com/motorsports" target="_blank">
-				    	<img src="img/posiciones/chevrolet-logo-notext.png" class="logo chevrolet"></a>
+				    	<img src="img/standings/chevrolet-logo-notext.png" class="logo chevrolet"></a>
 				    </td>
 				    <td>3025</td>
 				    <td>-70</td>
@@ -191,8 +191,8 @@
 				  </tr>
 				  <tr>
 				    <td>12</td>
-				    <td><img src="img/posiciones/ryanBlaney12Logo2.png" class="logo numero"><span class="nombre">Ryan Blaney</span></td>
-				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/posiciones/ford-logo.png" class="logo ford"></a></td>
+				    <td><img src="img/standings/ryanBlaney12Logo2.png" class="logo numero"><span class="nombre">Ryan Blaney</span></td>
+				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/standings/ford-logo.png" class="logo ford"></a></td>
 				    <td>3010</td>
 				    <td>-85</td>
 				    <td>0</td>
@@ -203,8 +203,8 @@
 				  </tr>
 				  <tr>
 				    <td>13</td>
-				    <td><img src="img/posiciones/aricAlmirola10Logo.png" class="logo numero"><span class="nombre">Aric Almirola</span></td>
-				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/posiciones/ford-logo.png" class="logo ford"></a></td>
+				    <td><img src="img/standings/aricAlmirola10Logo.png" class="logo numero"><span class="nombre">Aric Almirola</span></td>
+				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/standings/ford-logo.png" class="logo ford"></a></td>
 				    <td>2101</td>
 				    <td>-994</td>
 				    <td>0</td>
@@ -215,8 +215,8 @@
 				  </tr>
 				  <tr>
 				    <td>14</td>
-				    <td><img src="img/posiciones/ryanNewman6Logo.png" class="logo numero"><span class="nombre">Ryan Newman</span></td>
-				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/posiciones/ford-logo.png" class="logo ford"></a></td>
+				    <td><img src="img/standings/ryanNewman6Logo.png" class="logo numero"><span class="nombre">Ryan Newman</span></td>
+				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/standings/ford-logo.png" class="logo ford"></a></td>
 				    <td>2085</td>
 				    <td>-1010</td>
 				    <td>0</td>
@@ -227,10 +227,10 @@
 				  </tr>
 				  <tr>
 				    <td>15</td>
-				    <td><img src="img/posiciones/kurtBusch1Logo.png" class="logo numero"><span class="nombre"><b>Kurt Busch</b></span></td>
+				    <td><img src="img/standings/kurtBusch1Logo.png" class="logo numero"><span class="nombre"><b>Kurt Busch</b></span></td>
 				    <td>
 				    	<a href="https://www.chevrolet.com/motorsports" target="_blank">
-				    	<img src="img/posiciones/chevrolet-logo-notext.png" class="logo chevrolet">
+				    	<img src="img/standings/chevrolet-logo-notext.png" class="logo chevrolet">
 				    </td>
 				    <td>2084</td>
 				    <td>-1011</td>
@@ -242,9 +242,9 @@
 				  </tr>
 				  <tr>
 				    <td>16</td>
-				    <td><img src="img/posiciones/ericJones20Logo.png" class="logo numero"><span class="nombre"><b>Eric Jones</b></span></td>
+				    <td><img src="img/standings/ericJones20Logo.png" class="logo numero"><span class="nombre"><b>Eric Jones</b></span></td>
 				    <td>
-				    	<a href="https://www.toyota.com/racing" target="_blank"><img src="img/posiciones/toyota-logo-notext.png" class="logo toyota"></a>
+				    	<a href="https://www.toyota.com/racing" target="_blank"><img src="img/standings/toyota-logo-notext.png" class="logo toyota"></a>
 				    </td>
 				    <td>2037</td>
 				    <td>-1058</td>
@@ -256,10 +256,10 @@
 				  </tr>
 				  <tr>
 				    <td>17</td>
-				    <td><img src="img/posiciones/jimmieJohnson48Logo.png" class="logo numero"><span class="nombre">Jimmie Johnson</span></td>
+				    <td><img src="img/standings/jimmieJohnson48Logo.png" class="logo numero"><span class="nombre">Jimmie Johnson</span></td>
 				    <td>
 				    	<a href="https://www.chevrolet.com/motorsports" target="_blank">
-				    	<img src="img/posiciones/chevrolet-logo-notext.png" class="logo chevrolet">
+				    	<img src="img/standings/chevrolet-logo-notext.png" class="logo chevrolet">
 				    </td>
 				    <td>740</td>
 				    <td>-2355</td>
@@ -271,8 +271,8 @@
 				  </tr>
 				  <tr>
 				   <td>18</td>
-				    <td><img src="img/posiciones/danielSuarez41Logo.png" class="logo numero"><span class="nombre">Daniel Suarez</span></td>
-				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/posiciones/ford-logo.png" class="logo ford"></td>
+				    <td><img src="img/standings/danielSuarez41Logo.png" class="logo numero"><span class="nombre">Daniel Suarez</span></td>
+				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/standings/ford-logo.png" class="logo ford"></td>
 				    <td>730</td>
 				    <td>-2365</td>
 				    <td>0</td>
@@ -283,8 +283,8 @@
 				  </tr>
 				  <tr>
 				    <td>19</td>
-				    <td><img src="img/posiciones/paulMenard21Logo.png" class="logo numero"><span class="nombre">Paul Menard</span></td>
-				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/posiciones/ford-logo.png" class="logo ford"></a></td>
+				    <td><img src="img/standings/paulMenard21Logo.png" class="logo numero"><span class="nombre">Paul Menard</span></td>
+				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/standings/ford-logo.png" class="logo ford"></a></td>
 				    <td>656</td>
 				    <td>-2439</td>
 				    <td>0</td>
@@ -295,10 +295,10 @@
 				  </tr>
 				  <tr>
 				    <td>20</td>
-				    <td><img src="img/posiciones/chrisBuescher37Logo.png" class="logo numero"><span class="nombre">Chris Buescher</span></td>
+				    <td><img src="img/standings/chrisBuescher37Logo.png" class="logo numero"><span class="nombre">Chris Buescher</span></td>
 				    <td>
 				    	<a href="https://www.chevrolet.com/motorsports" target="_blank">
-				    	<img src="img/posiciones/chevrolet-logo-notext.png" class="logo chevrolet"></a>
+				    	<img src="img/standings/chevrolet-logo-notext.png" class="logo chevrolet"></a>
 				    </td>
 				    <td>599</td>
 				    <td>-2496</td>
@@ -310,9 +310,9 @@
 				  </tr>
 				  <tr>
 				    <td>21</td>
-				    <td><img src="img/posiciones/mattDiBenedetto95Logo.png" class="logo numero"><span class="nombre">MattDiBenedetto</span></td>
+				    <td><img src="img/standings/mattDiBenedetto95Logo.png" class="logo numero"><span class="nombre">MattDiBenedetto</span></td>
 				    <td>
-				    	<a href="https://www.toyota.com/racing" target="_blank"><img src="img/posiciones/toyota-logo-notext.png" class="logo toyota"></a>
+				    	<a href="https://www.toyota.com/racing" target="_blank"><img src="img/standings/toyota-logo-notext.png" class="logo toyota"></a>
 				    </td>
 				    <td>585</td>
 				    <td>-2510</td>
@@ -324,8 +324,8 @@
 				  </tr>
 				  <tr>
 				    <td>22</td>
-				    <td><img src="img/posiciones/rickyStenhouseJr17Logo.png" class="logo numero"><span class="nombre">Ricky Stenhouse Jr</span></td>
-				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/posiciones/ford-logo.png" class="logo ford"></a></td>
+				    <td><img src="img/standings/rickyStenhouseJr17Logo.png" class="logo numero"><span class="nombre">Ricky Stenhouse Jr</span></td>
+				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/standings/ford-logo.png" class="logo ford"></a></td>
 				    <td>563</td>
 				    <td>-2532</td>
 				    <td>0</td>
@@ -336,10 +336,10 @@
 				  </tr>
 				  <tr>
 				    <td>23</td>
-				    <td><img src="img/posiciones/austinDillon3Logo.png" class="logo numero"><span class="nombre">Austin Dillon</span></td>
+				    <td><img src="img/standings/austinDillon3Logo.png" class="logo numero"><span class="nombre">Austin Dillon</span></td>
 				    <td>
 				    	<a href="https://www.chevrolet.com/motorsports" target="_blank">
-				    	<img src="img/posiciones/chevrolet-logo-notext.png" class="logo chevrolet"></a>
+				    	<img src="img/standings/chevrolet-logo-notext.png" class="logo chevrolet"></a>
 				    </td>
 				    <td>558</td>
 				    <td>-2537</td>
@@ -351,10 +351,10 @@
 				  </tr>
 				  <tr>
 				    <td>24</td>
-				    <td><img src="img/posiciones/tyDillon13Logo.png" class="logo numero"><span class="nombre">Ty Dillon</span></td>
+				    <td><img src="img/standings/tyDillon13Logo.png" class="logo numero"><span class="nombre">Ty Dillon</span></td>
 				    <td>
 				    	<a href="https://www.chevrolet.com/motorsports" target="_blank">
-				    	<img src="img/posiciones/chevrolet-logo-notext.png" class="logo chevrolet"></a>
+				    	<img src="img/standings/chevrolet-logo-notext.png" class="logo chevrolet"></a>
 				    </td>
 				    <td>509</td>
 				    <td>-2586</td>
@@ -366,10 +366,10 @@
 				  </tr>
 				  <tr>
 				    <td>25</td>
-				    <td><img src="img/posiciones/danielHemric8Logo.png" class="logo numero"><span class="nombre">Daniel Hemric</span></td>
+				    <td><img src="img/standings/danielHemric8Logo.png" class="logo numero"><span class="nombre">Daniel Hemric</span></td>
 				    <td>
 				    	<a href="https://www.chevrolet.com/motorsports" target="_blank">
-				    	<img src="img/posiciones/chevrolet-logo-notext.png" class="logo chevrolet"></a>
+				    	<img src="img/standings/chevrolet-logo-notext.png" class="logo chevrolet"></a>
 				    </td>
 				    <td>425</td>
 				    <td>-2670</td>
@@ -381,10 +381,10 @@
 				  </tr>
 				  <tr>
 				    <td>26</td>
-				    <td><img src="img/posiciones/bubbaWallace43Logo.png" class="logo numero"><span class="nombre">Bubba Wallace</span></td>
+				    <td><img src="img/standings/bubbaWallace43Logo.png" class="logo numero"><span class="nombre">Bubba Wallace</span></td>
 				    <td>
 				    	<a href="https://www.chevrolet.com/motorsports" target="_blank">
-				    	<img src="img/posiciones/chevrolet-logo-notext.png" class="logo chevrolet"></a>
+				    	<img src="img/standings/chevrolet-logo-notext.png" class="logo chevrolet"></a>
 				    </td>
 				    <td>420</td>
 				    <td>-2675</td>
@@ -396,10 +396,10 @@
 				  </tr>
 				  <tr>
 				    <td>27</td>
-				    <td><img src="img/posiciones/ryanPreece47Logo.png" class="logo numero"><span class="nombre">Ryan Preece</span></td>
+				    <td><img src="img/standings/ryanPreece47Logo.png" class="logo numero"><span class="nombre">Ryan Preece</span></td>
 				    <td>
 				    	<a href="https://www.chevrolet.com/motorsports" target="_blank">
-				    	<img src="img/posiciones/chevrolet-logo-notext.png" class="logo chevrolet"></a>
+				    	<img src="img/standings/chevrolet-logo-notext.png" class="logo chevrolet"></a>
 				    </td>
 				    <td>405</td>
 				    <td>-2690</td>
@@ -411,8 +411,8 @@
 				  </tr>
 				  <tr>
 				   <td>28</td>
-				   	<td><img src="img/posiciones/michaelMcDowell34Logo.png" class="logo numero"><span class="nombre">Michael McDowell</span></td>
-				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/posiciones/ford-logo.png" class="logo ford"></a></td>
+				   	<td><img src="img/standings/michaelMcDowell34Logo.png" class="logo numero"><span class="nombre">Michael McDowell</span></td>
+				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/standings/ford-logo.png" class="logo ford"></a></td>
 				    <td>396</td>
 				    <td>-2699</td>
 				    <td>0</td>
@@ -423,8 +423,8 @@
 				  </tr>
 				  <tr>
 				    <td>29</td>
-				    <td><img src="img/posiciones/coreyLaJoie32Logo.png" class="logo numero"><span class="nombre">Corey LaJoie</span></td>
-				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/posiciones/ford-logo.png" class="logo ford"></a></td>
+				    <td><img src="img/standings/coreyLaJoie32Logo.png" class="logo numero"><span class="nombre">Corey LaJoie</span></td>
+				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/standings/ford-logo.png" class="logo ford"></a></td>
 				    <td>334</td>
 				    <td>-2761</td>
 				    <td>0</td>
@@ -435,8 +435,8 @@
 				  </tr>
 				  <tr>
 				    <td>30</td>
-				    <td><img src="img/posiciones/davidRagan38Logo2.png" class="logo numero"><span class="nombre">David Ragan</span></td>
-				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/posiciones/ford-logo.png" class="logo ford"></a></td>
+				    <td><img src="img/standings/davidRagan38Logo2.png" class="logo numero"><span class="nombre">David Ragan</span></td>
+				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/standings/ford-logo.png" class="logo ford"></a></td>
 				    <td>330</td>
 				    <td>-2765</td>
 				    <td>0</td>
@@ -447,8 +447,8 @@
 				  </tr>
 				  <tr>
 				    <td>31</td>
-				    <td><img src="img/posiciones/mattTifft36Logo.png" class="logo numero"><span class="nombre">Matt Tifft</span></td>
-				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/posiciones/ford-logo.png" class="logo ford"></a></td>
+				    <td><img src="img/standings/mattTifft36Logo.png" class="logo numero"><span class="nombre">Matt Tifft</span></td>
+				    <td><a href="https://performance.ford.com/" target="_blank"><img src="img/standings/ford-logo.png" class="logo ford"></a></td>
 				    <td>316</td>
 				    <td>-2779</td>
 				    <td>0</td>
