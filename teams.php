@@ -22,7 +22,7 @@ if (isset($_GET["equipo"])) {
         // cant. filas
         $equipo = mysqli_fetch_array($resultado, MYSQLI_ASSOC); // capturar la fila
     } else {
-        header("location:equipos.php");
+        header("location:teams.php");
     }
 }
 ?>
@@ -106,15 +106,15 @@ if (isset($_GET["equipo"])) {
 							<li><a href="#">Front Row Motorsports</a></li>
 							<li><a href="#">Go FAS Racing</a></li>
 							<li><a href="#">Roush Fenway Racing</a></li>
-							<li><a href="equipos.php?equipo=stewartHaasRacing">Stewart-Haas Racing</a></li>
-							<li><a href="equipos.php?equipo=teamPenske">Team Penske</a></li>
+							<li><a href="teams.php?equipo=stewartHaasRacing">Stewart-Haas Racing</a></li>
+							<li><a href="teams.php?equipo=teamPenske">Team Penske</a></li>
 							<li><a href="#">Wood Brothers Racing</a></li>
 						</div>
 					</div>
 					<div class="columna toyota" id="columnaToyota">
 						<div class="contenedorLogo"><img src="img/standings/toyota-logo-notext.png" class="logo"></div>
 						<div class="lista">
-							<li><a href="equipos.php?equipo=joeGibbsRacing">Joe Gibbs Racing</a></li>
+							<li><a href="teams.php?equipo=joeGibbsRacing">Joe Gibbs Racing</a></li>
 							<li><a href="#">Leavine Family Racing</a></li>
 						</div>
 					</div>

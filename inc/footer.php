@@ -22,7 +22,7 @@
 				<p><a href="index.php">Home</a></p>
 				<p><a href="schedule.php">Calendario</a></p>
 				<p><a href="standings.php">Posiciones</a></p>
-				<p><a href="equipos.php">Equipos</a></p>
+				<p><a href="teams.php">Equipos</a></p>
 				<?php echo (isset($_SESSION['id_usuario'])) ? '<p><a href="user-log-out.php">Cerrar Sesión</a></p>' : '<p><a href="log-in.php">Iniciar Sesión</a></p><p><a href="register.php">Registro</a></p>' ?>
 			</div>
 			<div class="columna redes">

@@ -56,7 +56,7 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 ├── index.php
 ├── schedule.php
 ├── standings.php
-├── equipos.php
+├── teams.php
 ├── log-in.php
 └── register.php
 ```

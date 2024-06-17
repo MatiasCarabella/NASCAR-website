@@ -72,7 +72,7 @@ $estaPagina = "Noticia";
                 <p>Aún no hay comentarios, ¡sé el primero!</p>
                 <?php } ?>
                 <?php if (isset($_SESSION["id_usuario"])) { ?>
-                <form action="procesar_comentario.php" method="POST">
+                <form action="comment-create.php" method="POST">
                     <input type="hidden" name="id_noticia" value="<?php echo $noticia["id_noticia"]; ?>">
                     <input type="hidden" name="id_usuario" value="<?php echo $_SESSION["id_usuario"]; ?>">
                     <div class="comentario-form">
