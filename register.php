@@ -1,5 +1,5 @@
 <?php
-	include 'inc/nav.php';
+	include 'inc/navbar.php';
 	$estaPagina = 'SignUp';
 	$mensaje = '<p>¿Ya tienes una cuenta? <a href="log-in.php">Inicia Sesión</a></p>';
 ?>

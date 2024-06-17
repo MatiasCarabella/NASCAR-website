@@ -155,13 +155,13 @@ footer{
 
 .footerStart a{
 	overflow: hidden;
-	text-align: center;
+	text-align: right;
 }
 
 .footerStart a:before,
 .footerStart a:after{
 	background-color: #808080;
- 	content: ""; /* Importante, tiene que haber contenido aunque esté vacío para que se muestra */
+ 	content: ""; /* Importante, tiene que haber contenido aunque esté vacío para que se muestre */
  	display: inline-block;
   	height: 1px; /* grosor de la linea */
   	position: relative;
@@ -171,13 +171,11 @@ footer{
 }
 
 .footerStart a:before{ /* margen que separa la linea del elemento */
-	right: 0.5em;  
-  	margin-left: -50%;
+	right: 0.5m;
 }
 
 .footerStart a:after{ /* margen que separa la linea del elemento */
 	left: 0.5em;
- 	margin-right: -50%;
 }
 
 .footerStart .logo{
@@ -454,11 +452,10 @@ i {
 /* FADE TO WHITE: main.holder | FADE TO BLACK: main.holder .noticias */
 
 main.holder{
-	/*transition: background-color 0.2s ease-in-out;*/
 	background-color: #ededed;
 	margin: 0 auto;
-	overflow: scroll;
-	display:block;
+	overflow: hidden;
+	display: block;
 	height: auto;
 	box-shadow: inset 16px 0 15px -15px rgba(0, 0, 0, 0.8),
 				inset -16px 0 15px -15px rgba(0, 0, 0, 0.8),
@@ -1223,13 +1220,14 @@ body:after{
 
 .holder.equipo{
 	background: white;
+	overflow: none;
 }
 
 .holder.equipo.jgr{
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 72%, rgba(237,237,237,1) 82%, rgba(237,237,237,1) 100%);
 }
 
-.holder.equipo.penske{
+.holder.equipo.teampenske{
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(237,237,237,1) 75%, rgba(237,237,237,1) 100%);
 }
 
@@ -1263,7 +1261,7 @@ body:after{
 .holder.equipo .descripcionEquipo h1:before,
 .holder.equipo .descripcionEquipo h1:after{
 	background-color: #010203;
- 	content: ""; /* Importante, tiene que haber contenido aunque esté vacío para que se muestra */
+ 	content: ""; /* Importante, tiene que haber contenido aunque esté vacío para que se muestre */
  	display: inline-block;
   	height: 3px; /* grosor de la linea */
   	position: relative;
@@ -1282,7 +1280,45 @@ body:after{
  	margin-right: -60%;
 }
 
+.holder.equipo.notfound h1{
+	text-align: center;
+	margin-top: 1em;
+}
 
+.holder.equipo.notfound h1:before,
+.holder.equipo.notfound h1:after{
+	background-color: #010203;
+ 	content: ""; /* Importante, tiene que haber contenido aunque esté vacío para que se muestre */
+ 	display: inline-block;
+  	height: 3px; /* grosor de la linea */
+  	position: relative;
+ 	bottom: 12px; /* con esto ajustas la altura */
+  	width: 25%; /* largo de la linea */
+  	pointer-events: none; /* para que no sea clickeable */
+}
+
+.holder.equipo.notfound h1:before{ /* margen que separa la linea del elemento */
+	right: 0.6em;  
+}
+
+.holder.equipo.notfound h1:after{ /* margen que separa la linea del elemento */
+	left: 0.6em;
+}
+
+.holder.equipo.notfound h3{
+	text-align: center;
+	margin-top: 1em;
+}
+
+.holder.equipo.notfound a {
+	transition: color 0.1s ease-in-out;	
+	text-decoration: none;
+	color: black;
+}
+
+.holder.equipo.notfound a:hover {
+	color: #007ac2;
+}
 
 .contenedorFlex{
 	display: flex;

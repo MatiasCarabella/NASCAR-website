@@ -1,5 +1,5 @@
 <?php
-include "inc/nav.php";
+include "inc/navbar.php";
 $estaPagina = "Noticia";
 ?>
 <!DOCTYPE html>
@@ -60,7 +60,7 @@ $estaPagina = "Noticia";
                     <?php while ($comentario = mysqli_fetch_array($comentarios)) { ?>
                     <div class="comentario">
                         <div class="comentario-header">
-                            <img src="img/usuarios/default.png">
+                            <img src="img/user/default.png">
                             <span class="comentario-usuario"><?php echo nombre_usuario($comentario["id_usuario"]); ?></span>
                             <span class="comentario-fecha"><?php echo $comentario["fecha"]; ?></span>
                         </div>
@@ -79,7 +79,7 @@ $estaPagina = "Noticia";
                     <input type="hidden" name="id_usuario" value="<?php echo $_SESSION["id_usuario"]; ?>">
                     <div class="comentario-form">
                         <div class="comentario-form-header">
-                            <img src="img/usuarios/default.png">
+                            <img src="img/user/default.png">
                             <span><?php echo nombre_usuario($_SESSION["id_usuario"]); ?></span>
                         </div>
                         <div class="comentario-form-body">

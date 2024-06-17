@@ -1,6 +1,6 @@
 <?php
 	$estaPagina = 'LogIn';
-	include ('inc/nav.php');
+	include ('inc/navbar.php');
 ?>
 <!DOCTYPE html>
 <html lang="es">

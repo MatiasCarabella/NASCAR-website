@@ -44,7 +44,7 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 ├── inc/
 │   ├── db-connection.php
 │   ├── utils.php
-│   ├── nav.php
+│   ├── navbar.php
 │   └── footer.php
 ├── css/
 │   ├── normalize.css
