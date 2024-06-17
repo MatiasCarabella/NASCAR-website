@@ -1225,7 +1225,7 @@ body:after{
 	background: white;
 }
 
-.holder.equipo.gibbs{
+.holder.equipo.jgr{
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 72%, rgba(237,237,237,1) 82%, rgba(237,237,237,1) 100%);
 }
 
@@ -1369,15 +1369,15 @@ body:after{
 
 .pilotos .piloto h3{
 	display: inline-block;
-	padding: 0 7px 10px;
+	padding: 0 5px 6px;
 	vertical-align: middle;
+	pointer-events: none;
 }
 
 .pilotos .piloto .logo.numero{
 	display: inline-block;
 	height: 25px;
-	/*position: absolute;*/
-	margin: 5px 0 5px 10px;
+	margin: 5px 0 5px 15px;
 	vertical-align: middle;
 }
 

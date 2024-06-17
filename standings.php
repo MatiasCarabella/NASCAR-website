@@ -39,7 +39,7 @@
 				<tbody>
 				  <tr>
 				    <td>1</td>
-				    <td><img src="img/standings/martinTruex19Logo.png" class="logo numero"><span class="nombre"><b>Martin Truex Jr</b></span></td>
+				    <td><img src="img/standings/martin-truex-jr-19-logo.png" class="logo numero"><span class="nombre"><b>Martin Truex Jr</b></span></td>
 				    <td>
 				    	<a href="https://www.toyota.com/racing" target="_blank"><img src="img/standings/toyota-logo-notext.png" class="logo toyota"></a>
 				    </td>
@@ -53,7 +53,7 @@
 				  </tr>
 				  <tr>
 				    <td>2</td>
-				    <td><img src="img/standings/dennyHamlin11Logo.png" class="logo numero"><span class="nombre"><b>Denny Hamlin</b></span></td>
+				    <td><img src="img/standings/denny-hamlin-11-logo.png" class="logo numero"><span class="nombre"><b>Denny Hamlin</b></span></td>
 				    <td>
 				    	<a href="https://www.toyota.com/racing" target="_blank"><img src="img/standings/toyota-logo-notext.png" class="logo toyota"></a>
 				    </td>
@@ -67,7 +67,7 @@
 				  </tr>
 				  <tr>
 				    <td>3</td>
-				    <td><img src="img/standings/kyleBusch18Logo.png" class="logo numero"><span class="nombre"><b>Kyle Busch</b></span></td>
+				    <td><img src="img/standings/kyle-busch-18-logo.png" class="logo numero"><span class="nombre"><b>Kyle Busch</b></span></td>
 				    <td>
 				    	<a href="https://www.toyota.com/racing" target="_blank"><img src="img/standings/toyota-logo-notext.png" class="logo toyota"></a>
 				    </td>
@@ -242,7 +242,7 @@
 				  </tr>
 				  <tr>
 				    <td>16</td>
-				    <td><img src="img/standings/ericJones20Logo.png" class="logo numero"><span class="nombre"><b>Eric Jones</b></span></td>
+				    <td><img src="img/standings/eric-jones-20-logo.png" class="logo numero"><span class="nombre"><b>Eric Jones</b></span></td>
 				    <td>
 				    	<a href="https://www.toyota.com/racing" target="_blank"><img src="img/standings/toyota-logo-notext.png" class="logo toyota"></a>
 				    </td>

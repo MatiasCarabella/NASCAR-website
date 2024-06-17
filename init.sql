@@ -5,6 +5,7 @@ USE sitioNASCAR;
 DROP TABLE IF EXISTS noticias;
 DROP TABLE IF EXISTS usuarios;
 DROP TABLE IF EXISTS comentarios;
+DROP TABLE IF EXISTS equipos;
 
 -- Create 'usuarios' table
 CREATE TABLE IF NOT EXISTS usuarios (
@@ -89,3 +90,135 @@ CREATE TABLE IF NOT EXISTS comentarios (
 
 INSERT INTO comentarios (id_noticia, id_usuario, comentario) VALUES (1, 1, 'This is a sample comment.');
 INSERT INTO comentarios (id_noticia, id_usuario, comentario) VALUES (1, 1, 'Another comment.');
+
+CREATE TABLE IF NOT EXISTS equipos (
+    id_equipo INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_equipo VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    nombre_abreviado VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    imgLogo VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    imgEquipo VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    sobreEquipo TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    fundador VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    sede VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    sitioWeb VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    facebook VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+    twitter VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+    youtube VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+    instagram VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+    piloto1_nombre VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    piloto1_img VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    piloto1_imgNumero VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    piloto2_nombre VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    piloto2_img VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    piloto2_imgNumero VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    piloto3_nombre VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    piloto3_img VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    piloto3_imgNumero VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    piloto4_nombre VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+    piloto4_img VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+    piloto4_imgNumero VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
+) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+INSERT INTO equipos (
+    nombre_equipo,
+    nombre_abreviado,
+    imgLogo,
+    imgEquipo,
+    sobreEquipo,
+    fundador,
+    sede,
+    sitioWeb,
+    facebook,
+    twitter,
+    youtube,
+    instagram,
+    piloto1_nombre,
+    piloto1_img,
+    piloto1_imgNumero,
+    piloto2_nombre,
+    piloto2_img,
+    piloto2_imgNumero,
+    piloto3_nombre,
+    piloto3_img,
+    piloto3_imgNumero,
+    piloto4_nombre,
+    piloto4_img,
+    piloto4_imgNumero
+) VALUES (
+    'Joe Gibbs Racing',
+    'JGR',
+    'img/teams/joe-gibbs-racing/logo.png',
+    'img/teams/joe-gibbs-racing/banner.jpg',
+    'Fundado en 1992 por el exentrenador de los Washington Redskins, Joe Gibbs, JGR se consolidó con el correr de los años como una potencia: 5 campeonatos (2000, 2002, 2005, 2015, 2019), cientos de victorias y múltiples pilotos históricos entre los que se destacan Bobby Labonte, Tony Stewart, Kyle Busch y Denny Hamlin han pasado por sus filas',
+    'Joe Gibbs',
+    'Huntersville, North Carolina',
+    'joegibbsracing.com',
+    'https://www.facebook.com/joegibbsracing',
+    'https://twitter.com/joegibbsracing',
+    'https://www.youtube.com/@JoeGibbsRacingTV',
+    'https://www.instagram.com/joegibbsracing',
+    'Kyle Busch',
+    'img/teams/joe-gibbs-racing/drivers/kyle-busch.png',
+    'img/standings/kyle-busch-18-logo.png',
+    'Denny Hamlin',
+    'img/teams/joe-gibbs-racing/drivers/denny-hamlin.png',
+    'img/standings/denny-hamlin-11-logo.png',
+    'Martin Truex Jr.',
+    'img/teams/joe-gibbs-racing/drivers/martin-truex-jr.png',
+    'img/standings/martin-truex-jr-19-logo.png',
+    'Eric Jones',
+    'img/teams/joe-gibbs-racing/drivers/eric-jones.png',
+    'img/standings/eric-jones-20-logo.png'
+);
+
+INSERT INTO equipos (
+    nombre_equipo,
+    nombre_abreviado,
+    imgLogo,
+    imgEquipo,
+    sobreEquipo,
+    fundador,
+    sede,
+    sitioWeb,
+    facebook,
+    twitter,
+    youtube,
+    instagram,
+    piloto1_nombre,
+    piloto1_img,
+    piloto1_imgNumero,
+    piloto2_nombre,
+    piloto2_img,
+    piloto2_imgNumero,
+    piloto3_nombre,
+    piloto3_img,
+    piloto3_imgNumero,
+    piloto4_nombre,
+    piloto4_img,
+    piloto4_imgNumero
+) VALUES (
+    'Team Penske',
+    'teamPenske',
+    'img/logos/team-penske-logo.png',
+    'img/equipos/team-penske.jpg',
+    'Team Penske is an American professional stock car racing team that currently competes in the NASCAR Cup Series.',
+    'Roger Penske',
+    'Mooresville, North Carolina',
+    'teampenske.com',
+    'https://www.facebook.com/TeamPenske',
+    'https://twitter.com/Team_Penske',
+    'https://www.youtube.com/user/TeamPenske',
+    'https://www.instagram.com/teampenske',
+    'Brad Keselowski',
+    'img/pilotos/brad-keselowski.jpg',
+    'img/pilotos/brad-keselowski-number.png',
+    'Joey Logano',
+    'img/pilotos/joey-logano.jpg',
+    'img/pilotos/joey-logano-number.png',
+    'Ryan Blaney',
+    'img/pilotos/ryan-blaney.jpg',
+    'img/pilotos/ryan-blaney-number.png',
+    NULL,
+    NULL,
+    NULL
+);
