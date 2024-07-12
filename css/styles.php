@@ -99,8 +99,8 @@ nav ul li:not(:first-child) a:after{ /* Linea separadora de elementos */
 }
 
 nav ul li a:hover{ /* :hover pseudoclase */
-	transition: ease-in-out background-color .3s; 
-	transition: ease-in-out color .3s;
+	transition: ease-in-out background-color .1s; 
+	transition: ease-in-out color .1s;
 	background-color: #333;
 	color: #ffd659;
 	border-bottom: 4px solid transparent;
@@ -1359,8 +1359,8 @@ body:after{
 	color: #007ac2;
 }
 
-.info .icon-instagram:hover::before{
-	color: #8a3ab9;
+.info .icon-x:hover::before{
+	color: #000000;
 }
 
 .holder.equipo h2.tituloPilotos{

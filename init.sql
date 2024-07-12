@@ -198,10 +198,10 @@ INSERT INTO equipos (
     piloto4_imgNumero
 ) VALUES (
     'Team Penske',
-    'Team Penske',
+    'Penske',
     'img/teams/team-penske/logo.png',
     'img/teams/team-penske/banner.jpg',
-    'Team Penske is an American professional stock car racing team that currently competes in the NASCAR Cup Series.',
+    'Fundado en 1966 por Roger Penske, Team Penske se ha convertido en una fuerza dominante en el automovilismo. Sus más grandes logros en NASCAR incluyen: 2 campeonatos (2012 y 2018), una impresionante cantidad de victorias y la participación de pilotos legendarios como Rusty Wallace, Kurt Busch, Brad Keselowski y Joey Logano. Team Penske sigue siendo una potencia, destacándose por su competitividad y éxito constante en la pista.',
     'Roger Penske',
     'Mooresville, North Carolina',
     'teampenske.com',
