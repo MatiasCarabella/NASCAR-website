@@ -1073,21 +1073,7 @@ main.holder{
 	text-align: center;
 }
 
-#posiciones .logo.toyota{
-	height: 20px;
-	margin: 0;
-	padding: 0;
-	padding-top: 3px;
-}
-
-#posiciones .logo.ford{
-	height: 20px;
-	margin: 0;
-	padding: 0;
-	padding-top: 4px;
-}
-
-#posiciones .logo.chevrolet{
+#posiciones .logo.marca{
 	height: 20px;
 	margin: 0;
 	padding: 0;
