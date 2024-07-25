@@ -24,6 +24,9 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 - Lists teams grouped by manufacturer.
 - Provides detailed information about each team.
 
+### Profile/User Settings
+- Users can change their profile picture and manage their passwords.
+
 ### User Authentication
 - Allows users to register and log in to the website.
 - Manages user sessions and restricts access to certain features.
