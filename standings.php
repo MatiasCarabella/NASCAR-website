@@ -1,5 +1,5 @@
 <?php
-    include "db-connection.php";
+    require_once 'utils/db-connection.php';
     $estaPagina = 'Posiciones';
     include 'inc/navbar.php';
 

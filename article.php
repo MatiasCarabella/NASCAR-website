@@ -60,7 +60,7 @@ $estaPagina = "Noticia";
                     <?php while ($comentario = mysqli_fetch_array($comentarios)) { ?>
                     <div class="comentario">
                         <div class="comentario-header">
-                            <img src="img/user/default.png">
+                            <img src="<?php echo get_profile_pic($comentario["id_usuario"]); ?>">
                             <span class="comentario-usuario"><?php echo nombre_usuario($comentario["id_usuario"]); ?></span>
                             <span class="comentario-fecha"><?php echo $comentario["fecha"]; ?></span>
                         </div>
@@ -74,13 +74,13 @@ $estaPagina = "Noticia";
                 <p>Aún no hay comentarios, ¡sé el primero!</p>
                 <?php } ?>
                 <?php if (isset($_SESSION["id_usuario"])) { ?>
-                <form action="comment-create.php" method="POST">
+                <form action="utils/comment-create.php" method="POST">
                     <input type="hidden" name="id_noticia" value="<?php echo $noticia["id_noticia"]; ?>">
                     <input type="hidden" name="id_usuario" value="<?php echo $_SESSION["id_usuario"]; ?>">
                     <div class="comentario-form">
                         <div class="comentario-form-header">
-                            <img src="img/user/default.png">
-                            <span><?php echo nombre_usuario($_SESSION["id_usuario"]); ?></span>
+                            <img src="<?php echo get_profile_pic($_SESSION["id_usuario"]); ?>">
+                            <span><?php echo nombre_usuario($_SESSION["id_usuario"]);  echo $_SESSION["profile_pic"]; ?></span>
                         </div>
                         <div class="comentario-form-body">
                             <textarea name="comentario" placeholder="¿Cuál es tu opinión? ¡Únete a la conversación dejando un comentario!" rows="5" cols="77"></textarea>

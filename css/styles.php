@@ -668,12 +668,11 @@ main.holder{
 }
 
 .indice{
-	padding: 1em 1.5em 0 1.5em;
+	padding: 2em 1.5em 0 1.5em;
 	background: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 10%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 100%);
 }
 
 .indice h1{
-	padding: 10px 0px 0px 5px;
 	margin: 0;
 }
 
@@ -682,7 +681,7 @@ main.holder{
 }
 
 .indice hr{
-	width: 98%;
+	width: 100%;
 	border-top: 3px solid #010203;
 	color: #010203;
 }
@@ -1692,6 +1691,8 @@ input:-webkit-autofill:active  {
     border-radius: 50%;
     margin-right: 10px;
 	height: 36px;
+	width: 36px;
+ 	object-fit: cover;
 }
 
 .comentario-header span {
@@ -1728,6 +1729,8 @@ input:-webkit-autofill:active  {
     border-radius: 50%;
     margin-right: 10px;
 	height: 48px;
+	width: 48px;
+ 	object-fit: cover;
 }
 
 .comentario-form-header span {
@@ -1827,6 +1830,181 @@ input:-webkit-autofill:active  {
 	height: 3.5%;
 	margin-left: 2.5%;
 	margin-bottom: 2.5%;
+}
+
+/* Profile Page Styles */
+
+.perfil {
+	padding: 2em 1.5em 0 1.5em;
+	background: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 10%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 100%);
+	box-sizing: border-box;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+	background-color: white;
+	overflow: auto;
+	display: flex;
+ 	flex-direction: column;
+ 	justify-content: space-between;
+  	align-items: flex-start;
+	width: 100%; 
+	height:100%;
+}
+
+.perfil h1 {
+	margin: 0;
+}
+
+
+.perfil hr{
+	width: 100%;
+	border-top: 3px solid #010203;
+	margin-bottom: 2em;
+	color: #010203;
+}
+
+.perfil h2:after {
+	background-color: #010203;
+ 	content: "";
+ 	display: inline-block;
+  	height: 3px;
+  	position: relative;
+ 	bottom: 7px;
+  	pointer-events: none;
+  	left: 0.5em;
+ 	margin-right: -50%;
+}
+
+.perfil .password-section h2:after {
+	width: 71%;
+}
+
+.perfil .logout-section h2:after {
+	width: 79.5%;
+}
+
+.page-title {
+    text-align: left;
+    color: black;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.profile-section, .password-section, .logout-section {
+    margin-bottom: 30px;
+}
+
+.profile-pic-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.current-profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.username {
+	margin-top: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.file-input-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+	padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #ffd659;
+    border-radius: 5px;
+	transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.file-input-wrapper:hover {
+    background-color: #ffc859;
+}
+
+.file-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.submit-btn, .logout-btn {
+    background-color: #ffd659;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+	display: flex;
+	margin: auto;
+}
+
+.submit-btn:hover {
+   background-color: #ffc859;;
+}
+
+.logout-btn {
+    background-color: #e4002b;
+	color: white;
+	font-weight: bolder;
+}
+
+.logout-btn:hover {
+	background-color: #cd0027;
+}
+
+.password-form .form-group {
+    margin-bottom: 15px;
+}
+
+.password-form label {
+    margin-bottom: 5px;
+    color: #666;
+	margin-left: 30%;
+}
+
+.password-form input[type="password"] {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+	margin: auto;
+	display: flex;
+}
+
+.success-message, .error-message {
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.success-message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.error-message {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
 }
 
 /* FIN */

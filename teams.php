@@ -1,5 +1,5 @@
 <?php
-include "db-connection.php";
+require_once 'utils/db-connection.php';
 $estaPagina = "Equipos";
 include "inc/navbar.php";
 

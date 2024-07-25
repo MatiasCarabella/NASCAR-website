@@ -22,7 +22,7 @@
 	<main class="holder login">
 		<div class="caja logeo" id="caja" name="login">
 			<h1 style="text-align: center;">Iniciar Sesión</h1>
-				<form action="user-log-in.php" method="POST" class="formulario">
+				<form action="utils/user-log-in.php" method="POST" class="formulario">
 						<div class="campo">
 							<input type="text" placeholder="Usuario" id="usuario" required pattern="\S+" title="El nombre de usuario no puede tener espacios." name="usuario">
 							<span class="iconoIzq icon-user" id="iconoUser"></span>

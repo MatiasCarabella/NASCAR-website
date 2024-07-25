@@ -1,6 +1,6 @@
 <?php
 
-include('db-connection.php'); 
+require_once 'db-connection.php';
 
 $usuario = $_POST['usuario'];
 $email = $_POST['email'];
@@ -12,13 +12,13 @@ if (isset($usuario, $email, $password, $confirmPassword)) {
 
     // Validate input data (basic checks)
     if (empty($usuario) || empty($email) || empty($password) || empty($confirmPassword)) {
-        header('location:register.php?envio=error&mensaje=Todos los campos son obligatorios#registro');
+        header('location: ../register.php?envio=error&mensaje=Todos los campos son obligatorios#registro');
         exit();
     }
 
     // Check if passwords match
     if ($password !== $confirmPassword) {
-        header('location:register.php?envio=error&mensaje=Las contraseñas no coinciden#registro');
+        header('location: ../register.php?envio=error&mensaje=Las contraseñas no coinciden#registro');
         exit();
     }
 
@@ -40,10 +40,10 @@ if (isset($usuario, $email, $password, $confirmPassword)) {
     }
 
     // If execution reaches here, registration was successful
-    header('location:register.php?envio=ok#registro');
+    header('location: ../register.php?envio=ok#registro');
     exit();
 } else {
-    header('location:register.php?envio=error&mensaje=Error en datos recibidos#registro');
+    header('location: ../register.php?envio=error&mensaje=Error en datos recibidos#registro');
     exit();
 }
 ?>

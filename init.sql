@@ -12,10 +12,12 @@ CREATE TABLE IF NOT EXISTS usuarios (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
     usuario VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
     password VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    email VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
+    email VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    profile_pic VARCHAR(255) DEFAULT 'img/user/profile_pics/default.png'
 ) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 INSERT INTO usuarios (usuario, password, email) VALUES ('root', '$2y$10$WNtlWT.Dkl0XDnZpovJo8.u8eH3mBaj9xlO3FUb71hwtiJmDYIGrm', 'root@example.com');
+INSERT INTO usuarios (usuario, password, email, profile_pic) VALUES ('jorge', '$2y$10$WNtlWT.Dkl0XDnZpovJo8.u8eH3mBaj9xlO3FUb71hwtiJmDYIGrm', 'jorge@example.com', 'img/user/profile_pics/boke.jpeg');
 
 -- Create 'noticias' table
 CREATE TABLE IF NOT EXISTS noticias (
@@ -88,8 +90,8 @@ CREATE TABLE IF NOT EXISTS comentarios (
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
 ) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-INSERT INTO comentarios (id_noticia, id_usuario, comentario) VALUES (1, 1, 'This is a sample comment.');
-INSERT INTO comentarios (id_noticia, id_usuario, comentario) VALUES (1, 1, 'Another comment.');
+INSERT INTO comentarios (id_noticia, id_usuario, comentario) VALUES (1, 2, 'This is a sample comment.');
+INSERT INTO comentarios (id_noticia, id_usuario, comentario) VALUES (1, 2, 'Another comment.');
 
 -- Creating the 'posiciones' table
 CREATE TABLE IF NOT EXISTS posiciones (

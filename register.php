@@ -26,7 +26,7 @@
 		<main class="holder registro">
 			<div class="caja registro" id="caja" name="registro">
 				<h1 style="text-align: center;">Registro</h1>
-					<form action="user-register.php" method="POST" class="formulario">
+					<form action="utils/user-register.php" method="POST" class="formulario">
 							<div class="campo">
 								<input type="text" placeholder="Usuario" id="usuario" required pattern="\S+" title="El nombre de usuario no puede tener espacios." name="usuario">
 								<span class="iconoIzq icon-user" id="iconoUser"></span>

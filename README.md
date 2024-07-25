@@ -38,27 +38,31 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 ```
 /NASCAR-website
 │
-├── docker-compose.yml
 ├── Dockerfile
 ├── init.sql
+├── docker-compose.yml
 ├── inc/
-│   ├── db-connection.php
-│   ├── utils.php
 │   ├── navbar.php
 │   └── footer.php
+├── index.php
+├── article.php
+├── schedule.php
+├── standings.php
+├── teams.php
+├── profile.php
+├── log-in.php
+├── register.php
 ├── css/
 │   ├── normalize.css
 │   └── styles.php
 ├── js/
-│   └── video-hover.js
+│   └── ... (js scripts)
+├── utils/
+│   └── ... (php scripts)
 ├── img/
 │   └── ... (image files)
-├── index.php
-├── schedule.php
-├── standings.php
-├── teams.php
-├── log-in.php
-└── register.php
+└── video/
+    └── ... (video files)
 ```
 
 ## Setup Instructions
@@ -85,7 +89,8 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 - **Homepage**: View and comment on the latest NASCAR news.
 - **Race Calendar**: Check the schedule for upcoming races.
 - **Championship Standings**: See the current standings.
-- **Teams**: Explore information about different teams grouped by manufacturers.
+- **Teams**: Explore information about the different teams grouped by manufacturers.
+- **My Profile**: Upload your own profile picture, change your password or log out.
 - **Log In**/**Register**: Create an account or log in to access personalized features.
 
 ## License
