@@ -80,7 +80,7 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
    ```
     docker-compose up --build
    ```
-   The `init.sql` script will be automatically executed to create the necessary tables and insert initial data.
+   _The `init.sql` script will be automatically executed to create the necessary tables and insert initial data._
 
 3. Access the website:
   - Open your browser and navigate to http://localhost:8080.
@@ -94,9 +94,10 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 - **Log In**/**Register**: Create an account or log in to access personalized features.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](https://github.com/MatiasCarabella/NASCAR-website/blob/main/LICENSE).
 
 ## Acknowledgements
 - University Course Instructor and Teaching Assistants
 - NASCAR for providing inspiration and data for the project
 - Open source libraries and tools used in this project
+  
