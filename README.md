@@ -4,8 +4,6 @@
 
 <h1 align="center">NASCAR-website: University Course Final Project</h1>
 
-## Project Description
-
 This project is a NASCAR-themed website developed for my 2019 'Professional Webmaster' university course. It features a dynamic homepage with news and comments, a race calendar for the year, championship standings, team information categorized by manufacturer, and user authentication with log-in and registration functionalities.
 
 ## Features
@@ -37,6 +35,26 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 - Database: MySQL
 - Containerization: Docker
 
+## Setup Instructions
+
+### Prerequisites
+- [Docker](https://docs.docker.com/get-started/get-docker/) and [Docker Compose](https://docs.docker.com/compose/)
+
+### Installation
+1. Clone the repository:
+   ```
+   git clone https://github.com/MatiasCarabella/NASCAR-website.git
+   cd NASCAR-website
+   ```
+   
+2. Build and start the Docker containers:
+   ```
+    docker-compose up --build
+   ```
+   _The `init.sql` script will be automatically executed to create the necessary tables and insert initial data._
+
+3. Access the website on http://localhost:8080.
+
 ## Project Structure
 ```
 /NASCAR-website
@@ -67,23 +85,6 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 └── video/
     └── ... (video files)
 ```
-
-## Setup Instructions
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/MatiasCarabella/NASCAR-website.git
-   cd NASCAR-website
-   ```
-   
-2. Build and start the Docker containers:
-   ```
-    docker-compose up --build
-   ```
-   _The `init.sql` script will be automatically executed to create the necessary tables and insert initial data._
-
-3. Access the website:
-  - Open your browser and navigate to http://localhost:8080.
 
 ## Usage
 - **Homepage**: View and comment on the latest NASCAR news.
