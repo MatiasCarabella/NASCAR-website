@@ -95,7 +95,7 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 - **Log In**/**Register**: Create an account or log in to access personalized features.
 
 ## License
-This project is licensed under the [MIT License](https://github.com/MatiasCarabella/NASCAR-website/blob/main/LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgements
 - University Course Instructor and Teaching Assistants
