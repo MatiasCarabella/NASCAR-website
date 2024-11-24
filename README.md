@@ -75,17 +75,14 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
    git clone https://github.com/MatiasCarabella/NASCAR-website.git
    cd NASCAR-website
    ```
-2. Ensure **Docker** is installed and running on your machine.
-
-3. Build and start the Docker containers:
+   
+2. Build and start the Docker containers:
    ```
     docker-compose up --build
    ```
-   
-4. Initialize the database:
-  - The init.sql script will be automatically executed to create the necessary tables and insert initial data.
+   The `init.sql` script will be automatically executed to create the necessary tables and insert initial data.
 
-5. Access the website:
+3. Access the website:
   - Open your browser and navigate to http://localhost:8080.
 
 ## Usage
