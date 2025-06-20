@@ -43,7 +43,7 @@ VALUES (
 
 
 INSERT INTO noticias (title, description, image_main, body) VALUES (
-    '¡Marcos Ambrose gana de nuevo en Watkins Glen!',
+    'Marcos Ambrose logra el doblete en Watkins Glen',
     'El piloto australiano logró reivindicar su triunfo del año pasado.',
     'img/articles/ambrose-winner/image_main.jpg',
     'El piloto australiano Marcos Ambrose se alzó con una victoria espectacular en la carrera de este fin de semana en Watkins Glen. Esta victoria no solo es un hito personal para Ambrose, sino que también reafirma su dominio en este circuito, habiendo ganado también el año pasado en circunstancias igualmente emocionantes.\n\nLa carrera de este año será recordada por su final de infarto, con Ambrose manteniendo la calma y la precisión en medio del caos, del cual logró emerger victorioso.\n\nEsta victoria es especialmente significativa para Ambrose, quien ha demostrado ser uno de los mejores pilotos en circuitos de carretera, destacándose entre sus competidores por su habilidad y determinación. Con esta victoria, Ambrose no solo añade un segundo trofeo a su colección de la máxima categoría, sino que también se asegura un lugar destacado en la historia del circuito.'
