@@ -54,10 +54,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                     <p class="username"><?php echo htmlspecialchars($usuario); ?></p>
                     <div class="file-input-wrapper">
-                        <label for="profile_pic" class="file-input-label">Seleccionar nueva imagen de perfil</label>
+                        <label for="profile_pic" class="file-input-label">Nueva imagen de perfil</label>
                         <input type="file" name="profile_pic" id="profile_pic" accept="image/png, image/jpeg, image/gif" required class="file-input">
                     </div>
-                    <button type="submit" class="submit-btn">Actualizar imagen</button>
+                    <button type="submit" class="submit-btn" id="update-img-btn" style="display:none;">Actualizar</button>
                 </form>
             </section>
             
@@ -98,6 +98,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         setTimeout(function() {
             document.body.style.visibility = 'visible';
         }, 10);
+        // Show the update image button only after a file is selected, and hide the label
+        document.addEventListener('DOMContentLoaded', function() {
+            var fileInput = document.getElementById('profile_pic');
+            var updateBtn = document.getElementById('update-img-btn');
+            var fileLabel = document.querySelector('label.file-input-label');
+            var currentImg = document.querySelector('.current-profile-pic img');
+            fileInput.addEventListener('change', function() {
+                if (fileInput.files && fileInput.files.length > 0) {
+                    updateBtn.style.display = 'inline-block';
+                    // Show preview of selected image
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        currentImg.src = e.target.result;
+                    };
+                    reader.readAsDataURL(fileInput.files[0]);
+                } else {
+                    updateBtn.style.display = 'none';
+                    fileLabel.style.display = 'inline-block';
+                }
+            });
+        });
     </script>
 </body>
 </html>

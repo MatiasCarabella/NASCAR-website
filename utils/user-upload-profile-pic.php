@@ -26,9 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['profile_pic'])) {
         die("An error occurred during file upload. Error code: " . $file['error']);
     }
     
-    // Validate file size (5MB max)
-    if ($file['size'] > 5 * 1024 * 1024) {
-        die("File is too large. Maximum size is 5MB.");
+    // Validate file size (10MB max)
+    if ($file['size'] > 10 * 1024 * 1024) {
+        die("File is too large. Maximum size is 10MB.");
     }
     
     // Validate file type
