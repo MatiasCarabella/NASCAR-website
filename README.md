@@ -6,9 +6,9 @@
    <a href="https://html.spec.whatwg.org/" target="_blank"><img src="https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white" alt="HTML" /></a>
    <a href="https://www.w3.org/Style/CSS/" target="_blank"><img src="https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff" alt="CSS" /></a>
    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000" alt="JavaScript" /></a>
-    <a href="https://www.php.net/" target="_blank"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FMatiasCarabella%2Fyoutube-search-API%2Fmain%2Fcomposer.json&query=%24.require.php&label=PHP&labelColor=777BB4&color=gray&logo=php&logoColor=white" alt="PHP" /></a>
-     <a href="https://www.mysql.com/" target="_blank"><img src="https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Fraw.githubusercontent.com%2FMatiasCarabella%2Fformula1-driver-API%2Fmain%2Fpom.xml&query=%2F%2F*%5Blocal-name()%3D'mysql.version'%5D&label=MySQL&labelColor=4479A1&color=gray&logo=mysql&logoColor=white" alt="MySQL" /></a>
-    <a href="https://www.docker.com/" target="_blank"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff" alt="Docker" /></a>
+   <a href="https://www.php.net/" target="_blank"><img src="https://img.shields.io/badge/dynamic/yaml?label=PHP&query=%24%5B0%5D.matches.%5B1%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FMatiasCarabella%2FNASCAR-website%2Fmain%2FDockerfile&logo=php&logoColor=white&color=777BB4&labelColor=777BB4&style=flat&match=FROM%20php%3A([0-9.]+)-apache" alt="PHP" /></a>
+   <a href="https://www.mysql.com/" target="_blank"><img src="https://img.shields.io/badge/dynamic/yaml?label=MySQL&query=%24%5B0%5D.matches.%5B1%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FMatiasCarabella%2FNASCAR-website%2Fmain%2Fdocker-compose.yml&logo=mysql&logoColor=white&color=4479A1&labelColor=4479A1&style=flat&match=image%3A%20mysql%3A([0-9.]+)" alt="MySQL" /></a>
+   <a href="https://www.docker.com/" target="_blank"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff" alt="Docker" /></a>
 </div>
 
 <h1 align="center">NASCAR-website: University Course Final Project</h1>
@@ -110,4 +110,4 @@ This project is licensed under the [MIT License](LICENSE).
 - University Course Instructor and Teaching Assistants
 - NASCAR for providing inspiration and data for the project
 - Open source libraries and tools used in this project
-  
+
