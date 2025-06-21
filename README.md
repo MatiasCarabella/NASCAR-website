@@ -17,25 +17,31 @@
 This project is a NASCAR-themed website developed for my 2019 'Professional Webmaster' university course. It features a dynamic homepage with news and comments, a race calendar for the year, championship standings, team information categorized by manufacturer, and user authentication with log-in and registration functionalities.
 
 ## Features
+- **Homepage**: Hero section and latest NASCAR news headlines.
+- **News Articles**: See the full version of the articles and comment on them.
+- **Race Calendar**: Check the schedule for upcoming races.
+- **Championship Standings**: See the current standings.
+- **Teams**: Explore information about the different teams grouped by manufacturers.
+- **My Profile**: Upload your own profile picture, change your password or log out.
+- **Log In**/**Register**: Create an account or log in to access personalized features.
+
+## Screenshots
 
 ### Homepage
 - Hero section:
 
   ![image](https://github.com/user-attachments/assets/1a21e452-287f-4779-a519-3324c687eacb)
 
-- Latest news headlines:
+- News headlines:
 
    ![image](https://github.com/user-attachments/assets/68747734-d201-43a5-a6a2-5b5ee0b69a3c)
-
-
-
 
 ### News Articles
 - Complete news articles:
 
   ![image](https://github.com/user-attachments/assets/22f7069b-4ad4-4498-8eb9-ec6e1d84e2e2)
 
-- Logged in users can comment:
+- Comment section:
 
   ![image](https://github.com/user-attachments/assets/33edc6ea-4756-408c-b052-4b718120eec7)
 
@@ -123,14 +129,6 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 └── video/
     └── ... (video files)
 ```
-
-## Usage
-- **Homepage**: View and comment on the latest NASCAR news.
-- **Race Calendar**: Check the schedule for upcoming races.
-- **Championship Standings**: See the current standings.
-- **Teams**: Explore information about the different teams grouped by manufacturers.
-- **My Profile**: Upload your own profile picture, change your password or log out.
-- **Log In**/**Register**: Create an account or log in to access personalized features.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
