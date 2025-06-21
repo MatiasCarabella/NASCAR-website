@@ -1,12 +1,14 @@
 <?php
 require_once 'utils/db-connection.php';
 $estaPagina = "Equipos";
-include "inc/navbar.php";
+include_once 'inc/navbar.php';
+include_once 'utils/functions.php';
 
 if (isset($_GET["id"])) {
     $teamID = intval($_GET["id"]);
     $query = "SELECT * FROM equipos WHERE id_equipo='$teamID'";
     $resultado = mysqli_query($conexion, $query);
+    $teamData = null;
     if (mysqli_num_rows($resultado) > 0) {
         $teamData = mysqli_fetch_array($resultado, MYSQLI_ASSOC);
         $class = strtolower(str_replace(' ', '', $teamData["nombre_abreviado"]));
@@ -20,7 +22,7 @@ if (isset($_GET["id"])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo isset($teamData["nombre_equipo"]) ? $teamData["nombre_equipo"] : "Equipos"; ?> | NASCAR</title>
+    <title><?php echo $teamData['nombre_equipo'] ?? "Equipos"; ?> | NASCAR</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.php">
     <link rel="icon" href="img/favicon.ico">
@@ -33,14 +35,14 @@ if (isset($_GET["id"])) {
 <body class="sitio">
     <?php if (isset($teamID)) { ?>
         <main class="holder equipo <?php echo $class; ?>">
-            <?php if ($teamData['id_equipo'] == null) { ?>
+            <?php if ($teamData == null) { ?>
                 <h1>Equipo no encontrado</h1>
                 <h3><a href="teams.php">>> Volver a Equipos <<</a></h3>
                 <div class="imgEquipo" style="margin-top: 0px;">
                     <img src="img/teams/not-found/banner.jpg">
                 </div>
             <?php } else { ?>
-                <?php if (!is_null($teamData["imgLogo"])) { ?>
+                <?php if ($teamData["imgLogo"] != null) { ?>
                     <img class="logoEquipo" src="<?php echo $teamData["imgLogo"]; ?>">
                 <?php } ?>
                 <div class="imgEquipo" style="margin-top: 0px;">
@@ -51,7 +53,7 @@ if (isset($_GET["id"])) {
                     <div class="contenedorFlex">
                         <div class="parrafo">
                             <h2>Sobre <?php echo $teamData["nombre_abreviado"]; ?></h2>
-                            <p><?php echo utf8_decode($teamData["sobreEquipo"]); ?></p>
+                            <p><?php display($teamData["sobreEquipo"]); ?></p>
                         </div>
                         <div class="info">
                             <h4 style="margin-top: 5px;">Fundador:</h4>
@@ -137,7 +139,7 @@ if (isset($_GET["id"])) {
         </main>
     <?php } ?>
 
-    <?php include "inc/footer.php"; ?>
+    <?php include_once 'inc/footer.php'; ?>
     <script>
         // Delay the display of the body content to prevent Flash of Unstyled Content (FOUC)
         setTimeout(function() {

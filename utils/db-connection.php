@@ -4,9 +4,4 @@
     // Username: 'username'
     // Password: 'password'
     // Database name: 'sitioNASCAR'
-
-    // Set the character set to utf8mb4
-    if (!$conexion->set_charset("utf8mb4")) {
-        die('Error loading character set utf8mb4: ' . $conexion->error);
-    }
 ?>

@@ -1,7 +1,7 @@
 <?php
     require_once 'utils/db-connection.php';
     $estaPagina = 'Posiciones';
-    include 'inc/navbar.php';
+    include_once 'inc/navbar.php';
 
     $query = "SELECT * FROM posiciones ORDER BY puntos DESC";
     $resultado = mysqli_query($conexion, $query);
@@ -90,7 +90,7 @@
         </div>
     </main>
 
-    <?php include 'inc/footer.php'; ?>
+    <?php include_once 'inc/footer.php'; ?>
 
     <script>
         // Delay the display of the body content to prevent Flash of Unstyled Content (FOUC)

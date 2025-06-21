@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS sitioNASCAR CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE IF NOT EXISTS sitioNASCAR;
 USE sitioNASCAR;
 
 -- Drop existing tables if they exist
@@ -10,26 +10,27 @@ DROP TABLE IF EXISTS equipos;
 -- Create 'usuarios' table
 CREATE TABLE IF NOT EXISTS usuarios (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
-    usuario VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    password VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    email VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    usuario VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
     profile_pic VARCHAR(255) DEFAULT 'img/user/profile_pics/default.png'
-) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+);
 
+-- Both passwords are 'password'
 INSERT INTO usuarios (usuario, password, email) VALUES ('root', '$2y$10$WNtlWT.Dkl0XDnZpovJo8.u8eH3mBaj9xlO3FUb71hwtiJmDYIGrm', 'root@example.com');
 INSERT INTO usuarios (usuario, password, email, profile_pic) VALUES ('jorge', '$2y$10$WNtlWT.Dkl0XDnZpovJo8.u8eH3mBaj9xlO3FUb71hwtiJmDYIGrm', 'jorge@example.com', 'img/user/profile_pics/boke.jpeg');
 
 -- Create 'noticias' table
 CREATE TABLE IF NOT EXISTS noticias (
     id_noticia INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    description TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    image_main VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    body TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    image_article VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-    video_embed_url VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-    video_preview VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
-) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+    title VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    image_main VARCHAR(255) NOT NULL,
+    body TEXT NOT NULL,
+    image_article VARCHAR(255),
+    video_embed_url VARCHAR(255),
+    video_preview VARCHAR(255)
+);
 
 INSERT INTO noticias (title, description, image_main, body, video_embed_url, video_preview) 
 VALUES (
@@ -57,7 +58,7 @@ INSERT INTO noticias (title, description, image_main, body) VALUES (
 );
 
 INSERT INTO noticias (title, description, image_main, body) VALUES (
-    '¡Nuevo circuito se une al calendario: Charlotte Roval!',
+    'Un nuevo circuito se une al calendario: Charlotte Roval',
     'El calendario de 2020 se enriquece con un nuevo circuito de carretera.',
     'img/articles/charlotte-roval/image_main.jpg',
     'NASCAR ha confirmado su más reciente modificación al calendario de carreras para la temporada 2020: La esperada incorporación del Charlotte Roval.\n\nEste innovador trazado combina las características de un óvalo tradicional con las de un circuito de carretera, ofreciendo un desafío único tanto para los pilotos como para los equipos. Ubicado en el icónico Charlotte Motor Speedway, el Roval promete carreras llenas de adrenalina y estrategias complejas.\n\nLos fans han manifestado su entusiasmo por la llegada de este circuito, cuya primera edición promete una experiencia completamente nueva y duelos sobre el asfalto para el recuerdo.'
@@ -84,11 +85,11 @@ CREATE TABLE IF NOT EXISTS comentarios (
     id_comentario INT AUTO_INCREMENT PRIMARY KEY,
     id_noticia INT,
     id_usuario INT,
-    comentario TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    comentario TEXT NOT NULL,
     fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (id_noticia) REFERENCES noticias(id_noticia),
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
-) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+);
 
 INSERT INTO comentarios (id_noticia, id_usuario, comentario) VALUES (1, 2, 'This is a sample comment.');
 INSERT INTO comentarios (id_noticia, id_usuario, comentario) VALUES (1, 2, 'Another comment.');
@@ -146,31 +147,31 @@ INSERT INTO posiciones (piloto_nombre, piloto_logo, marca, puntos, ganadas, top_
 
 CREATE TABLE IF NOT EXISTS equipos (
     id_equipo INT AUTO_INCREMENT PRIMARY KEY,
-    nombre_equipo VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    nombre_abreviado VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    imgLogo VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    imgEquipo VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    sobreEquipo TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    fundador VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    sede VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    sitioWeb VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    facebook VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-    twitter VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-    youtube VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-    instagram VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-    piloto1_nombre VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    piloto1_img VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    piloto1_imgNumero VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    piloto2_nombre VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-    piloto2_img VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-    piloto2_imgNumero VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-    piloto3_nombre VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-    piloto3_img VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-    piloto3_imgNumero VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-    piloto4_nombre VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-    piloto4_img VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-    piloto4_imgNumero VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
-) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+    nombre_equipo VARCHAR(255) NOT NULL,
+    nombre_abreviado VARCHAR(255) NOT NULL,
+    imgLogo VARCHAR(255) NOT NULL,
+    imgEquipo VARCHAR(255) NOT NULL,
+    sobreEquipo TEXT NOT NULL,
+    fundador VARCHAR(255) NOT NULL,
+    sede VARCHAR(255) NOT NULL,
+    sitioWeb VARCHAR(255) NOT NULL,
+    facebook VARCHAR(255),
+    twitter VARCHAR(255),
+    youtube VARCHAR(255),
+    instagram VARCHAR(255),
+    piloto1_nombre VARCHAR(255) NOT NULL,
+    piloto1_img VARCHAR(255) NOT NULL,
+    piloto1_imgNumero VARCHAR(255) NOT NULL,
+    piloto2_nombre VARCHAR(255),
+    piloto2_img VARCHAR(255),
+    piloto2_imgNumero VARCHAR(255),
+    piloto3_nombre VARCHAR(255),
+    piloto3_img VARCHAR(255),
+    piloto3_imgNumero VARCHAR(255),
+    piloto4_nombre VARCHAR(255),
+    piloto4_img VARCHAR(255),
+    piloto4_imgNumero VARCHAR(255)
+);
 
 INSERT INTO equipos (
     nombre_equipo,

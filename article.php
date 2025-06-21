@@ -1,6 +1,7 @@
 <?php
-include "inc/navbar.php";
 $estaPagina = "Noticia";
+include_once 'inc/navbar.php';
+include_once 'utils/functions.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -32,8 +33,8 @@ $estaPagina = "Noticia";
     <main class="holder noticia">
         <?php if (!is_null($noticia["id_noticia"])) { ?>
             <div class="cuerpoNoticia">
-                <h1><?php echo utf8_decode($noticia["title"]); ?></h1>
-                <p><?php echo utf8_decode($noticia["description"]); ?></p>
+                <h1><?php display($noticia["title"]); ?></h1>
+                <p><?php display($noticia["description"]); ?></p>
             </div>
             <?php if (!is_null($noticia["image_article"])) { ?>
                 <img class="imgPrincipal" src="<?php echo $noticia["image_article"]; ?>">
@@ -41,7 +42,7 @@ $estaPagina = "Noticia";
                 <img class="imgPrincipal" src="<?php echo $noticia["image_main"]; ?>">
             <?php } ?>
             <div class="cuerpoNoticia">
-                <p><?php echo utf8_decode($noticia["body"]); ?></p>
+                <p><?php display($noticia["body"]); ?></p>
             </div>
             <?php if (!is_null($noticia["video_embed_url"])) { ?>
             <div class="videoNoticia">
@@ -61,11 +62,11 @@ $estaPagina = "Noticia";
                     <div class="comentario">
                         <div class="comentario-header">
                             <img src="<?php echo get_profile_pic($comentario["id_usuario"]); ?>">
-                            <span class="comentario-usuario"><?php echo nombre_usuario($comentario["id_usuario"]); ?></span>
+                            <span class="comentario-usuario"><?php display(nombre_usuario($comentario["id_usuario"])); ?></span>
                             <span class="comentario-fecha"><?php echo $comentario["fecha"]; ?></span>
                         </div>
                         <div class="comentario-body">
-                            <p><?php echo $comentario["comentario"]; ?></p>
+                            <p><?php display($comentario["comentario"]); ?></p>
                         </div>
                     </div>
                     <?php } ?>
@@ -80,7 +81,7 @@ $estaPagina = "Noticia";
                     <div class="comentario-form">
                         <div class="comentario-form-header">
                             <img src="<?php echo get_profile_pic($_SESSION["id_usuario"]); ?>">
-                            <span><?php echo nombre_usuario($_SESSION["id_usuario"]);  echo $_SESSION["profile_pic"]; ?></span>
+                            <span><?php display(nombre_usuario($_SESSION["id_usuario"])); ?></span>
                         </div>
                         <div class="comentario-form-body">
                             <textarea name="comentario" placeholder="¿Cuál es tu opinión? ¡Únete a la conversación dejando un comentario!" rows="5" cols="77"></textarea>
@@ -102,7 +103,7 @@ $estaPagina = "Noticia";
         <?php } ?>
     </main>
 
-    <?php include "inc/footer.php"; ?>
+    <?php include_once 'inc/footer.php'; ?>
 
     <script>
         // Delay the display of the body content to prevent Flash of Unstyled Content (FOUC)

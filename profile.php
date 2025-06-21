@@ -1,6 +1,7 @@
 <?php 
 $estaPagina='UserSettings';
-include('inc/navbar.php');
+include_once 'inc/navbar.php';
+include_once 'utils/functions.php';
 
 $id_usuario = $_SESSION['id_usuario'];
 $usuario = nombre_usuario($id_usuario);
@@ -91,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </form>
             </section>
     </main>
-    <?php include 'inc/footer.php'; ?>
+    <?php include_once 'inc/footer.php'; ?>
     <script>
         // Delay the display of the body content to prevent Flash of Unstyled Content (FOUC)
         setTimeout(function() {

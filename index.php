@@ -1,6 +1,7 @@
 <?php 
 	$estaPagina='Home';
-	include('inc/navbar.php');
+	include_once 'inc/navbar.php';
+	include_once 'utils/functions.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -43,8 +44,8 @@
 				<?php } else { ?>
 					<div class="imagenNoticia"><img src="<?php echo $noticia['image_main']?>" class="center"></div>
 				<?php } ?>
-				<h1><?php echo utf8_decode($noticia['title']); ?></h1>
-				<p><?php echo utf8_decode($noticia['description']); ?></p>
+				<h1><?php display($noticia['title']); ?></h1>
+				<p><?php display($noticia['description']); ?></p>
 			</div>
 				<?php } else { ?>
 					<div class="noticia arriba">
@@ -63,8 +64,8 @@
 				?>
 				<div class="noticia <?php echo $index === 0 ? 'arriba' : ''; ?>" onclick="location.href='article.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
 					<div class="imagenNoticia"><img src="<?php echo $noticia['image_main']; ?>" class="center"></div>
-					<h3><?php echo utf8_decode($noticia['title']); ?></h3>
-					<p><?php echo utf8_decode($noticia['description']); ?></p>
+					<h3><?php display($noticia['title']); ?></h3>
+					<p><?php display($noticia['description']); ?></p>
 				</div>
 				<?php } else { ?>
 				<div class="noticia <?php echo $index === 0 ? 'arriba' : ''; ?>">
@@ -87,8 +88,8 @@
 			?>
 			<div class="noticia" onclick="location.href='article.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
 				<div class="imagenNoticia"><img src="<?php echo $noticia['image_main']; ?>" class="center"></div>
-				<h3><?php echo utf8_decode($noticia['title']); ?></h3>
-				<p><?php echo utf8_decode($noticia['description']); ?></p>
+				<h3><?php display($noticia['title']); ?></h3>
+				<p><?php display($noticia['description']); ?></p>
 			</div>
 			<?php } else { ?>
 			<div class="noticia">

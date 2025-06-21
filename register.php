@@ -1,6 +1,6 @@
 <?php
-	include 'inc/navbar.php';
 	$estaPagina = 'SignUp';
+	include_once 'inc/navbar.php';
 	$mensaje = '<p>¿Ya tienes una cuenta? <a href="log-in.php">Inicia Sesión</a></p>';
 ?>
 <!DOCTYPE html>
@@ -60,7 +60,7 @@
 			</div>
 		</main>
 
-		<?php include 'inc/footer.php'; ?>
+		<?php include_once 'inc/footer.php'; ?>
 
 		<script>
 		// Delay the display of the body content to prevent Flash of Unstyled Content (FOUC)

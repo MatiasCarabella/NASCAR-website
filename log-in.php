@@ -1,6 +1,6 @@
 <?php
 	$estaPagina = 'LogIn';
-	include ('inc/navbar.php');
+	include_once 'inc/navbar.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -48,7 +48,7 @@
 		</div>
 	</main>
 
-	<?php include ('inc/footer.php'); ?>
+	<?php include_once 'inc/footer.php'; ?>
 
 	<script>
     // Delay the display of the body content to prevent Flash of Unstyled Content (FOUC)
