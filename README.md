@@ -19,31 +19,59 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 ## Features
 
 ### Homepage
-- Displays the latest news articles.
-- Users can comment on news articles.
+- Hero section:
+
+  ![image](https://github.com/user-attachments/assets/1a21e452-287f-4779-a519-3324c687eacb)
+
+- Latest news headlines:
+
+   ![image](https://github.com/user-attachments/assets/68747734-d201-43a5-a6a2-5b5ee0b69a3c)
+
+
+
+
+### News Articles
+- Complete news articles:
+
+  ![image](https://github.com/user-attachments/assets/22f7069b-4ad4-4498-8eb9-ec6e1d84e2e2)
+
+- Logged in users can comment:
+
+  ![image](https://github.com/user-attachments/assets/33edc6ea-4756-408c-b052-4b718120eec7)
+
 
 ### Race Calendar
-- Provides a year-long calendar of all NASCAR races.
+- Provides a year-long calendar of all NASCAR races:
+
+  ![image](https://github.com/user-attachments/assets/4a5261d1-ee81-48f1-a1ed-f034c77ed1b5)
+
 
 ### Championship Standings
-- Shows the current standings in the championship.
+- Shows the current standings in the championship:
+
+  ![image](https://github.com/user-attachments/assets/557f390f-700f-4e87-8b10-49a40f9496ae)
+
 
 ### Team Information
-- Lists teams grouped by manufacturer.
-- Provides detailed information about each team.
+- Lists teams grouped by manufacturer:
+
+  ![image](https://github.com/user-attachments/assets/244cad87-0621-4ea7-9ca6-19c16833e0d7)
+
+- Provides detailed information about each team:
+
+  ![image](https://github.com/user-attachments/assets/720660bf-073b-46cc-aba9-ddcc1ce3c2db)
+
 
 ### Profile/User Settings
-- Users can change their profile picture and manage their passwords.
+- Users can change their profile picture and manage their password:
+
+  ![image](https://github.com/user-attachments/assets/fb3e62b5-a96c-4605-b9d3-b776b2c5733d)
+
 
 ### User Authentication
-- Allows users to register and log in to the website.
-- Manages user sessions and restricts access to certain features.
+- Allows users to register and log in to the website:
 
-## Technologies Used
-- Frontend: HTML, CSS, JavaScript, jQuery
-- Backend: PHP
-- Database: MySQL
-- Containerization: Docker
+  ![image](https://github.com/user-attachments/assets/4bc53c3e-940f-48f8-947c-bd94d1aa3d52)
 
 ## Setup Instructions
 
