@@ -17,33 +17,51 @@
 This project is a NASCAR-themed website developed for my 2019 'Professional Webmaster' university course. It features a dynamic homepage with news and comments, a race calendar for the year, championship standings, team information categorized by manufacturer, and user authentication with log-in and registration functionalities.
 
 ## Features
+- **Homepage**: Hero section and latest NASCAR news headlines.
+- **News Articles**: See the full version of the articles and comment on them.
+- **Race Calendar**: Check the schedule for upcoming races.
+- **Championship Standings**: See the current standings.
+- **Teams**: Explore information about the different teams grouped by manufacturers.
+- **Log In**/**Register**: Create an account or log in to access personalized features.
+- **My Profile**: Upload your own profile picture, change your password or log out.
+
+## Screenshots
 
 ### Homepage
-- Displays the latest news articles.
-- Users can comment on news articles.
+  ![image](https://github.com/user-attachments/assets/1a21e452-287f-4779-a519-3324c687eacb)
+
+  ![image](https://github.com/user-attachments/assets/68747734-d201-43a5-a6a2-5b5ee0b69a3c)
+
+### News Articles
+  ![image](https://github.com/user-attachments/assets/22f7069b-4ad4-4498-8eb9-ec6e1d84e2e2)
+
+  ![image](https://github.com/user-attachments/assets/33edc6ea-4756-408c-b052-4b718120eec7)
+
 
 ### Race Calendar
-- Provides a year-long calendar of all NASCAR races.
+  ![image](https://github.com/user-attachments/assets/4a5261d1-ee81-48f1-a1ed-f034c77ed1b5)
+
+  ![image](https://github.com/user-attachments/assets/c9abf3ad-d640-43a6-8406-89b3db5e2e0d)
 
 ### Championship Standings
-- Shows the current standings in the championship.
+
+  ![image](https://github.com/user-attachments/assets/557f390f-700f-4e87-8b10-49a40f9496ae)
+
 
 ### Team Information
-- Lists teams grouped by manufacturer.
-- Provides detailed information about each team.
 
-### Profile/User Settings
-- Users can change their profile picture and manage their passwords.
+  ![image](https://github.com/user-attachments/assets/a72402ca-b90d-4016-99bb-156462808eaf)
+
+  ![image](https://github.com/user-attachments/assets/720660bf-073b-46cc-aba9-ddcc1ce3c2db)
+
 
 ### User Authentication
-- Allows users to register and log in to the website.
-- Manages user sessions and restricts access to certain features.
 
-## Technologies Used
-- Frontend: HTML, CSS, JavaScript, jQuery
-- Backend: PHP
-- Database: MySQL
-- Containerization: Docker
+  ![image](https://github.com/user-attachments/assets/4bc53c3e-940f-48f8-947c-bd94d1aa3d52)
+
+### Profile/User Settings
+
+  ![image](https://github.com/user-attachments/assets/fb3e62b5-a96c-4605-b9d3-b776b2c5733d)
 
 ## Setup Instructions
 
@@ -95,14 +113,6 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 └── video/
     └── ... (video files)
 ```
-
-## Usage
-- **Homepage**: View and comment on the latest NASCAR news.
-- **Race Calendar**: Check the schedule for upcoming races.
-- **Championship Standings**: See the current standings.
-- **Teams**: Explore information about the different teams grouped by manufacturers.
-- **My Profile**: Upload your own profile picture, change your password or log out.
-- **Log In**/**Register**: Create an account or log in to access personalized features.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
