@@ -108,7 +108,6 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgements
-- University Course Instructor and Teaching Assistants
+- University course professor and teaching assistants
 - NASCAR for providing inspiration and data for the project
 - Open source libraries and tools used in this project
-
