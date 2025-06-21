@@ -1,6 +1,6 @@
 <?php
-	$estaPagina = 'LogIn';
-	include_once 'inc/navbar.php';
+$estaPagina = 'LogIn';
+include_once 'inc/navbar.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -39,11 +39,11 @@
 						</div>
 						<p>¿No tienes una cuenta? <a href="register.php">Regístrate</a></p>
 						<?php
-							if (isset($_GET['logeo']) && $_GET['logeo'] == 'error') {
-						?>
+                            if (isset($_GET['logeo']) && $_GET['logeo'] == 'error') {
+                                ?>
 						<p class="textoLogeo" style="position: absolute;">Usuario y/o contraseña incorrectos.</p>
 						<?php
-							} ?>
+                            } ?>
 				</form>
 		</div>
 	</main>

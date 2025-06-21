@@ -4,11 +4,11 @@ require_once 'db-connection.php';
 
 // Check if POST data is set
 if (isset($_POST['usuario']) && isset($_POST['password'])) {
-    $usuario = $_POST['usuario'];
+    $usuario  = $_POST['usuario'];
     $password = $_POST['password'];
 
     // Use prepared statements to prevent SQL injection
-    $query = $conexion->prepare("SELECT id_usuario, password FROM usuarios WHERE usuario = ?");
+    $query = $conexion->prepare('SELECT id_usuario, password FROM usuarios WHERE usuario = ?');
     if ($query === false) {
         // Debugging purposes: Log the error or display it
         die('Prepare Error: ' . htmlspecialchars($conexion->error));
@@ -31,7 +31,7 @@ if (isset($_POST['usuario']) && isset($_POST['password'])) {
                 session_start();
                 $_SESSION['id_usuario'] = $fila['id_usuario'];
 
-                header("location: ../index.php");
+                header('location: ../index.php');
                 exit();
             } else {
                 header('location: ../log-in.php?logeo=error#log-in');
@@ -49,4 +49,3 @@ if (isset($_POST['usuario']) && isset($_POST['password'])) {
     header('location: ../log-in.php?logeo=error#log-in');
     exit();
 }
-?>

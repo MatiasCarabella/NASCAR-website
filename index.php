@@ -1,7 +1,7 @@
-<?php 
-	$estaPagina='Home';
-	include_once 'inc/navbar.php';
-	include_once 'utils/functions.php';
+<?php
+$estaPagina = 'Home';
+include_once 'inc/navbar.php';
+include_once 'utils/functions.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -29,14 +29,14 @@
 		</div>
 		<div class="titulo"><h1 style="margin: 0 0.8em">Últimas Noticias</h1></div>
 		<div class="noticias">
-			<?php 
-				$noticia = get_noticia(1);
-			?>
+			<?php
+                $noticia = get_noticia(1);
+?>
 		    <div class="noticiaPrincipal left" onclick="location.href='article.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
-		    	<?php 
-					if(!is_null($noticia['id_noticia'])) { 
-						if(!is_null($noticia['video_preview'])) { 
-				?>
+		    	<?php
+        if (!is_null($noticia['id_noticia'])) {
+            if (!is_null($noticia['video_preview'])) {
+                ?>
 				<div class="contenedorVideo" style="position:relative;">
 					<video src="<?php echo $noticia['video_preview']; ?>" class="watkinsGlenFinalVideo"  id="watkinsGlenFinalVideo" width="100%" height="100%;" preload="auto" muted style="object-fit: cover;" onmouseout="this.load();"></video>
 					<img src="<?php echo $noticia['image_main']; ?>" class="posterImage center" name="posterImage" height="100%;" style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; object-fit: cover; width:100%;">
@@ -56,12 +56,12 @@
             		</div>
 				<?php } ?>
 			<div class="noticiasRelacionadas right">
-				<?php 
-					$noticias_ids = [2, 3];
-					foreach ($noticias_ids as $index => $id) {
-						$noticia = get_noticia($id);
-						if (!is_null($noticia['id_noticia'])) {
-				?>
+				<?php
+                    $noticias_ids = [2, 3];
+foreach ($noticias_ids as $index => $id) {
+    $noticia = get_noticia($id);
+    if (!is_null($noticia['id_noticia'])) {
+        ?>
 				<div class="noticia <?php echo $index === 0 ? 'arriba' : ''; ?>" onclick="location.href='article.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
 					<div class="imagenNoticia"><img src="<?php echo $noticia['image_main']; ?>" class="center"></div>
 					<h3><?php display($noticia['title']); ?></h3>
@@ -73,19 +73,19 @@
 					<div class="skeleton skeleton-title"></div>
 					<div class="skeleton skeleton-text"></div>
 				</div>
-				<?php 
-						}
-					}
-				?>
+				<?php
+				}
+}
+?>
 			</div>
 		</div>
 		<div class="otrasNoticias">
-			<?php 
-				$noticias_ids = [4, 5, 6]; // Array of noticia IDs
-				foreach ($noticias_ids as $id) {
-					$noticia = get_noticia($id);
-					if (!is_null($noticia['id_noticia'])) {
-			?>
+			<?php
+$noticias_ids = [4, 5, 6]; // Array of noticia IDs
+foreach ($noticias_ids as $id) {
+    $noticia = get_noticia($id);
+    if (!is_null($noticia['id_noticia'])) {
+        ?>
 			<div class="noticia" onclick="location.href='article.php?id_noticia=<?php echo $noticia['id_noticia']; ?>'" style="cursor: pointer">
 				<div class="imagenNoticia"><img src="<?php echo $noticia['image_main']; ?>" class="center"></div>
 				<h3><?php display($noticia['title']); ?></h3>
@@ -97,13 +97,13 @@
 				<div class="skeleton skeleton-title"></div>
 				<div class="skeleton skeleton-text"></div>
 			</div>
-			<?php 
-					}
-				}
-			?>
+			<?php
+			}
+}
+?>
 		</div>
 	</main>
-	<?php include('inc/footer.php'); ?>
+	<?php include 'inc/footer.php'; ?>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/video-hover.js"></script> 
 	<script>

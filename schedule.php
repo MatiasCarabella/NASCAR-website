@@ -1,6 +1,6 @@
 <?php
-	$estaPagina='Calendario';
-	include_once 'inc/navbar.php';
+$estaPagina = 'Calendario';
+include_once 'inc/navbar.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">

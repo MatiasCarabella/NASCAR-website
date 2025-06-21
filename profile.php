@@ -1,17 +1,17 @@
-<?php 
-$estaPagina='UserSettings';
+<?php
+$estaPagina = 'UserSettings';
 include_once 'inc/navbar.php';
 include_once 'utils/functions.php';
 
-$id_usuario = $_SESSION['id_usuario'];
-$usuario = nombre_usuario($id_usuario);
+$id_usuario  = $_SESSION['id_usuario'];
+$usuario     = nombre_usuario($id_usuario);
 $profile_pic = get_profile_pic($id_usuario);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Handle password update
     if (isset($_POST['current_password'], $_POST['new_password'], $_POST['confirm_password'])) {
         $current_password = $_POST['current_password'];
-        $new_password = $_POST['new_password'];
+        $new_password     = $_POST['new_password'];
         $confirm_password = $_POST['confirm_password'];
 
         if ($new_password === $confirm_password) {
@@ -19,10 +19,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 update_password($id_usuario, password_hash($new_password, PASSWORD_DEFAULT));
                 $password_update_success = true;
             } else {
-                $password_update_error = "Contraseña incorrecta.";
+                $password_update_error = 'Contraseña incorrecta.';
             }
         } else {
-            $password_update_error = "Las contraseñas no coinciden.";
+            $password_update_error = 'Las contraseñas no coinciden.';
         }
     }
 }

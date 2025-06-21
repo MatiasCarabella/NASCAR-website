@@ -1,6 +1,6 @@
-<?php 
-	header("Content-type: text/css");
-	session_start();
+<?php
+header('Content-type: text/css');
+session_start();
 ?>
 
 /* GENERAL */

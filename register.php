@@ -1,7 +1,7 @@
 <?php
-	$estaPagina = 'SignUp';
-	include_once 'inc/navbar.php';
-	$mensaje = '<p>¿Ya tienes una cuenta? <a href="log-in.php">Inicia Sesión</a></p>';
+$estaPagina = 'SignUp';
+include_once 'inc/navbar.php';
+$mensaje = '<p>¿Ya tienes una cuenta? <a href="log-in.php">Inicia Sesión</a></p>';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -51,10 +51,10 @@
 								<input type="submit" value="Registrarse" name="Registrarse" id="submit">
 							</div>
 							<?php if (isset($_GET['envio']) && $_GET['envio'] == 'ok') {
-			$mensaje = '<p class="textoResultado">Registro completado con éxito. <a href="log-in.php">Inicia Sesión</a></p>';
-		} elseif (isset($_GET['envio']) && $_GET['envio'] == 'error') {
-			$mensaje = '<p class="textoResultado">No pudimos procesar tu solicitud</p>';
-		} ?>
+							    $mensaje = '<p class="textoResultado">Registro completado con éxito. <a href="log-in.php">Inicia Sesión</a></p>';
+							} elseif (isset($_GET['envio']) && $_GET['envio'] == 'error') {
+							    $mensaje = '<p class="textoResultado">No pudimos procesar tu solicitud</p>';
+							} ?>
 						<?php echo $mensaje; ?>
 					</form>
 			</div>

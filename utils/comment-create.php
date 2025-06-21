@@ -1,12 +1,12 @@
-<?php 
-	include('db-connection.php');
+<?php
 
-	$id_noticia=$_POST['id_noticia'];
-	$id_usuario=$_POST['id_usuario'];
-	$fecha=date("Y-m-d H:i:s");
-	$comentario=$_POST['comentario'];
+include 'db-connection.php';
 
-	$resultado = mysqli_query($conexion, "INSERT INTO comentarios VALUES (NULL, '$id_noticia', '$id_usuario', '$comentario', '$fecha')");
-	
-	header('location: ../article.php?id_noticia='.$id_noticia);
-?>
+$id_noticia = $_POST['id_noticia'];
+$id_usuario = $_POST['id_usuario'];
+$fecha      = date('Y-m-d H:i:s');
+$comentario = $_POST['comentario'];
+
+$resultado = mysqli_query($conexion, "INSERT INTO comentarios VALUES (NULL, '$id_noticia', '$id_usuario', '$comentario', '$fecha')");
+
+header('location: ../article.php?id_noticia=' . $id_noticia);

@@ -1,17 +1,17 @@
 <?php
 require_once 'utils/db-connection.php';
-$estaPagina = "Equipos";
+$estaPagina = 'Equipos';
 include_once 'inc/navbar.php';
 include_once 'utils/functions.php';
 
-if (isset($_GET["id"])) {
-    $teamID = intval($_GET["id"]);
-    $query = "SELECT * FROM equipos WHERE id_equipo='$teamID'";
+if (isset($_GET['id'])) {
+    $teamID    = intval($_GET['id']);
+    $query     = "SELECT * FROM equipos WHERE id_equipo='$teamID'";
     $resultado = mysqli_query($conexion, $query);
-    $teamData = null;
+    $teamData  = null;
     if (mysqli_num_rows($resultado) > 0) {
         $teamData = mysqli_fetch_array($resultado, MYSQLI_ASSOC);
-        $class = strtolower(str_replace(' ', '', $teamData["nombre_abreviado"]));
+        $class    = strtolower(str_replace(' ', '', $teamData['nombre_abreviado']));
     } else {
         $class = 'notfound';
     }
@@ -22,7 +22,7 @@ if (isset($_GET["id"])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo $teamData['nombre_equipo'] ?? "Equipos"; ?> | NASCAR</title>
+    <title><?php echo $teamData['nombre_equipo'] ?? 'Equipos'; ?> | NASCAR</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.php">
     <link rel="icon" href="img/favicon.ico">
@@ -42,59 +42,59 @@ if (isset($_GET["id"])) {
                     <img src="img/teams/not-found/banner.jpg">
                 </div>
             <?php } else { ?>
-                <?php if ($teamData["imgLogo"] != null) { ?>
-                    <img class="logoEquipo" src="<?php echo $teamData["imgLogo"]; ?>">
+                <?php if ($teamData['imgLogo'] != null) { ?>
+                    <img class="logoEquipo" src="<?php echo $teamData['imgLogo']; ?>">
                 <?php } ?>
                 <div class="imgEquipo" style="margin-top: 0px;">
-                    <img src="<?php echo $teamData["imgEquipo"]; ?>">
+                    <img src="<?php echo $teamData['imgEquipo']; ?>">
                 </div>
                 <div class="descripcionEquipo">
-                    <h1><?php echo $teamData["nombre_equipo"]; ?></h1>
+                    <h1><?php echo $teamData['nombre_equipo']; ?></h1>
                     <div class="contenedorFlex">
                         <div class="parrafo">
-                            <h2>Sobre <?php echo $teamData["nombre_abreviado"]; ?></h2>
-                            <p><?php display($teamData["sobreEquipo"]); ?></p>
+                            <h2>Sobre <?php echo $teamData['nombre_abreviado']; ?></h2>
+                            <p><?php display($teamData['sobreEquipo']); ?></p>
                         </div>
                         <div class="info">
                             <h4 style="margin-top: 5px;">Fundador:</h4>
-                            <p><?php echo $teamData["fundador"]; ?></p>
+                            <p><?php echo $teamData['fundador']; ?></p>
                             <h4>Sede:</h4>
-                            <p><?php echo $teamData["sede"]; ?></p>
+                            <p><?php echo $teamData['sede']; ?></p>
                             <h4>Sitio Web:</h4>
-                            <p><a href="https://www.<?php echo $teamData["sitioWeb"]; ?>"><?php echo $teamData["sitioWeb"]; ?></a></p>
+                            <p><a href="https://www.<?php echo $teamData['sitioWeb']; ?>"><?php echo $teamData['sitioWeb']; ?></a></p>
                             <h4>Redes:</h4>
                             <p>
-                                <a href="<?php echo $teamData["facebook"]; ?>" target="_blank" class="icon-facebook2"></a>
-                                <a href="<?php echo $teamData["twitter"]; ?>" target="_blank" class="icon-x"></a>
-                                <a href="<?php echo $teamData["youtube"]; ?>" target="_blank" class="icon-youtube"></a>
-                                <a href="<?php echo $teamData["instagram"]; ?>" target="_blank" class="icon-instagram"></a>
+                                <a href="<?php echo $teamData['facebook']; ?>" target="_blank" class="icon-facebook2"></a>
+                                <a href="<?php echo $teamData['twitter']; ?>" target="_blank" class="icon-x"></a>
+                                <a href="<?php echo $teamData['youtube']; ?>" target="_blank" class="icon-youtube"></a>
+                                <a href="<?php echo $teamData['instagram']; ?>" target="_blank" class="icon-instagram"></a>
                             </p>
                         </div>
                     </div>
                 </div>
-                <?php if (!is_null($teamData["piloto1_nombre"])) { ?>
+                <?php if (!is_null($teamData['piloto1_nombre'])) { ?>
                     <h2 class="tituloPilotos">Pilotos</h2>
                     <div class="pilotos">
                         <div class="piloto">
-                            <div class="imagenPiloto"><img src="<?php echo $teamData["piloto1_img"]; ?>" class="center"></div>
-                            <img src="<?php echo $teamData["piloto1_imgNumero"]; ?>" class="logo numero"><h3><?php echo $teamData["piloto1_nombre"]; ?></h3>
+                            <div class="imagenPiloto"><img src="<?php echo $teamData['piloto1_img']; ?>" class="center"></div>
+                            <img src="<?php echo $teamData['piloto1_imgNumero']; ?>" class="logo numero"><h3><?php echo $teamData['piloto1_nombre']; ?></h3>
                         </div>
-                        <?php if (!is_null($teamData["piloto2_nombre"])) { ?>
+                        <?php if (!is_null($teamData['piloto2_nombre'])) { ?>
                             <div class="piloto">
-                                <div class="imagenPiloto"><img src="<?php echo $teamData["piloto2_img"]; ?>" class="center"></div>
-                                <img src="<?php echo $teamData["piloto2_imgNumero"]; ?>" class="logo numero"><h3><?php echo $teamData["piloto2_nombre"]; ?></h3>
+                                <div class="imagenPiloto"><img src="<?php echo $teamData['piloto2_img']; ?>" class="center"></div>
+                                <img src="<?php echo $teamData['piloto2_imgNumero']; ?>" class="logo numero"><h3><?php echo $teamData['piloto2_nombre']; ?></h3>
                             </div>
                         <?php } ?>
-                        <?php if (!is_null($teamData["piloto3_nombre"])) { ?>
+                        <?php if (!is_null($teamData['piloto3_nombre'])) { ?>
                             <div class="piloto">
-                                <div class="imagenPiloto"><img src="<?php echo $teamData["piloto3_img"]; ?>" class="center"></div>
-                                <img src="<?php echo $teamData["piloto3_imgNumero"]; ?>" class="logo numero"><h3><?php echo $teamData["piloto3_nombre"]; ?></h3>
+                                <div class="imagenPiloto"><img src="<?php echo $teamData['piloto3_img']; ?>" class="center"></div>
+                                <img src="<?php echo $teamData['piloto3_imgNumero']; ?>" class="logo numero"><h3><?php echo $teamData['piloto3_nombre']; ?></h3>
                             </div>
                         <?php } ?>
-                        <?php if (!is_null($teamData["piloto4_nombre"])) { ?>
+                        <?php if (!is_null($teamData['piloto4_nombre'])) { ?>
                             <div class="piloto">
-                                <div class="imagenPiloto"><img src="<?php echo $teamData["piloto4_img"]; ?>" class="center"></div>
-                                <img src="<?php echo $teamData["piloto4_imgNumero"]; ?>" class="logo numero"><h3><?php echo $teamData["piloto4_nombre"]; ?></h3>
+                                <div class="imagenPiloto"><img src="<?php echo $teamData['piloto4_img']; ?>" class="center"></div>
+                                <img src="<?php echo $teamData['piloto4_imgNumero']; ?>" class="logo numero"><h3><?php echo $teamData['piloto4_nombre']; ?></h3>
                             </div>
                         <?php } ?>
                     </div>
