@@ -6,8 +6,8 @@
    <a href="https://html.spec.whatwg.org/" target="_blank"><img src="https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white" alt="HTML" /></a>
    <a href="https://www.w3.org/Style/CSS/" target="_blank"><img src="https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff" alt="CSS" /></a>
    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000" alt="JavaScript" /></a>
-   <a href="https://www.php.net/" target="_blank"><img src="https://img.shields.io/badge/dynamic/yaml?label=PHP&query=%24%5B0%5D.matches.%5B1%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FMatiasCarabella%2FNASCAR-website%2Fmain%2FDockerfile&logo=php&logoColor=white&color=777BB4&labelColor=777BB4&style=flat&match=FROM%20php%3A([0-9.]+)-apache" alt="PHP" /></a>
-   <a href="https://www.mysql.com/" target="_blank"><img src="https://img.shields.io/badge/dynamic/yaml?label=MySQL&query=%24%5B0%5D.matches.%5B1%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FMatiasCarabella%2FNASCAR-website%2Fmain%2Fdocker-compose.yml&logo=mysql&logoColor=white&color=4479A1&labelColor=4479A1&style=flat&match=image%3A%20mysql%3A([0-9.]+)" alt="MySQL" /></a>
+   <a href="https://www.php.net/" target="_blank"><img src="https://img.shields.io/badge/PHP-8.4-777BB4?logo=php&logoColor=white" alt="PHP" /></a>
+   <a href="https://www.mysql.com/" target="_blank"><img src="https://img.shields.io/badge/MySQL-9.3.0-4479A1?logo=mysql&logoColor=white" alt="MySQL" /></a>
    <a href="https://www.docker.com/" target="_blank"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff" alt="Docker" /></a>
 </div>
 
