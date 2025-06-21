@@ -6,6 +6,7 @@
    <a href="https://html.spec.whatwg.org/" target="_blank"><img src="https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white" alt="HTML" /></a>
    <a href="https://www.w3.org/Style/CSS/" target="_blank"><img src="https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff" alt="CSS" /></a>
    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000" alt="JavaScript" /></a>
+   <a href="https://jquery.com/" target="_blank"><img src="https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=fff" alt="jQuery" /></a>
    <a href="https://www.php.net/" target="_blank"><img src="https://img.shields.io/badge/PHP-8.4-777BB4?logo=php&logoColor=white" alt="PHP" /></a>
    <a href="https://www.mysql.com/" target="_blank"><img src="https://img.shields.io/badge/MySQL-9.3.0-4479A1?logo=mysql&logoColor=white" alt="MySQL" /></a>
    <a href="https://www.docker.com/" target="_blank"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff" alt="Docker" /></a>
