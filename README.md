@@ -8,6 +8,7 @@
    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000" alt="JavaScript" /></a>
    <a href="https://jquery.com/" target="_blank"><img src="https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=fff" alt="jQuery" /></a>
    <a href="https://www.php.net/" target="_blank"><img src="https://img.shields.io/badge/PHP-8.4-777BB4?logo=php&logoColor=white" alt="PHP" /></a>
+   <a href="https://getcomposer.org/" target="_blank"><img src="https://img.shields.io/badge/Composer-885630?logo=composer&logoColor=white" alt="Composer" /></a>
    <a href="https://www.mysql.com/" target="_blank"><img src="https://img.shields.io/badge/MySQL-9.3.0-4479A1?logo=mysql&logoColor=white" alt="MySQL" /></a>
    <a href="https://www.docker.com/" target="_blank"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff" alt="Docker" /></a>
 </div>
@@ -113,6 +114,16 @@ This project is a NASCAR-themed website developed for my 2019 'Professional Webm
 └── video/
     └── ... (video files)
 ```
+
+## Formatting
+
+This project uses [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) to ensure consistent code style. The formatting rules are defined in the `.php-cs-fixer.php` file at the project root.
+To automatically format your code, run:
+```
+composer format
+```
+If you are using an unsupported version of PHP, you may need to bypass the version check:
+Powershell: `$env:PHP_CS_FIXER_IGNORE_ENV=1; composer format` | Bash: `PHP_CS_FIXER_IGNORE_ENV=1 composer format`
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
